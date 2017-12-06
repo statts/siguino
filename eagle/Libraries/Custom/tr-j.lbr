@@ -1,0 +1,1170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="8.2.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="25" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
+<layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+</layers>
+<library>
+<packages>
+<package name="TO-220">
+<description>&lt;b&gt;POWER&lt;/b&gt;&lt;p&gt;
+TO-220&lt;p&gt;
+L×W×H : 10.0mm×4.8mm×15.5mm&lt;p&gt;
+grid 2.54mm vertical&lt;p&gt;
+(TO-220AB/SC-46)</description>
+<wire x1="-5" y1="-2.25" x2="5" y2="-2.25" width="0.2" layer="21"/>
+<wire x1="-5" y1="2.55" x2="5" y2="2.55" width="0.2" layer="21"/>
+<wire x1="-5" y1="-2.25" x2="-5" y2="2.55" width="0.2" layer="21"/>
+<wire x1="5" y1="-2.25" x2="5" y2="2.55" width="0.2" layer="21"/>
+<pad name="2" x="0" y="0" drill="1"/>
+<pad name="1" x="-2.54" y="0" drill="1"/>
+<pad name="3" x="2.54" y="0" drill="1"/>
+<text x="-2.7" y="2.85" size="1" layer="27" ratio="0">&gt;VALUE</text>
+<text x="-1.7" y="-1.95" size="1" layer="25" ratio="0">&gt;NAME</text>
+<text x="-2.2" y="1.8" size="0.8" layer="21" ratio="0" rot="R180">1</text>
+<text x="0.4" y="1.8" size="0.8" layer="21" ratio="0" rot="R180">2</text>
+<text x="2.9" y="1.8" size="0.8" layer="21" ratio="0" rot="R180">3</text>
+</package>
+<package name="TO-92-1">
+<description>&lt;b&gt;SMALL SIGNAL&lt;/b&gt;&lt;p&gt;
+TO-92&lt;p&gt;
+L×W×H : 4.8mm×3.8mm×5.0mm&lt;p&gt;
+grid 2.54mm vertical&lt;p&gt;
+(TO-92/SC-43)</description>
+<wire x1="-1.6263" y1="1.6263" x2="1.6263" y2="-1.6263" width="0.2" layer="21" curve="-180" cap="flat"/>
+<wire x1="0.1414" y1="-2.2627" x2="-2.2627" y2="0.1414" width="0.2" layer="21"/>
+<wire x1="1.6263" y1="-1.6263" x2="0.1414" y2="-2.2627" width="0.2" layer="21" curve="-41.115262" cap="flat"/>
+<wire x1="-1.6263" y1="1.6263" x2="-2.2627" y2="0.1414" width="0.2" layer="21" curve="41.113359" cap="flat"/>
+<pad name="2" x="-1.27" y="-1.27" drill="1"/>
+<pad name="3" x="1.27" y="-1.27" drill="1"/>
+<pad name="1" x="-1.27" y="1.27" drill="1"/>
+<text x="3.6" y="-1.8" size="1" layer="25" ratio="0" rot="R90">&gt;NAME</text>
+<text x="-2.6" y="-1.8" size="1" layer="27" ratio="0" rot="R90">&gt;VALUE</text>
+<text x="-0.2" y="1" size="0.8" layer="21" ratio="0">1</text>
+<text x="-0.6" y="-0.6" size="0.8" layer="21" ratio="0">2</text>
+<text x="1.2" y="-0.2" size="0.8" layer="21" ratio="0">3</text>
+</package>
+<package name="TO-92-2">
+<description>&lt;b&gt;SMALL SIGNAL&lt;/b&gt;&lt;p&gt;
+TO-92&lt;p&gt;
+L×W×H : 4.8mm×3.8mm×5.0mm&lt;p&gt;
+grid 2.54mm vertical&lt;p&gt;
+(TO-92/SC-43)</description>
+<wire x1="-1.6263" y1="1.6263" x2="1.6263" y2="-1.6263" width="0.2" layer="21" curve="-180" cap="flat"/>
+<wire x1="0.1414" y1="-2.2627" x2="-2.2627" y2="0.1414" width="0.2" layer="21"/>
+<wire x1="1.6263" y1="-1.6263" x2="0.1414" y2="-2.2627" width="0.2" layer="21" curve="-41.115262" cap="flat"/>
+<wire x1="-1.6263" y1="1.6263" x2="-2.2627" y2="0.1414" width="0.2" layer="21" curve="41.113359" cap="flat"/>
+<pad name="3" x="1.27" y="-1.27" drill="1"/>
+<pad name="1" x="-1.27" y="1.27" drill="1"/>
+<pad name="2" x="1.27" y="1.27" drill="1"/>
+<text x="-2.6" y="-3.2" size="1" layer="27" ratio="0" rot="R90">&gt;VALUE</text>
+<text x="3.6" y="-1.8" size="1" layer="25" ratio="0" rot="R90">&gt;NAME</text>
+<text x="-1.2" y="-0.4" size="0.8" layer="21" ratio="0">1</text>
+<text x="0" y="-0.2" size="0.8" layer="21" ratio="0">2</text>
+<text x="-0.4" y="-1.4" size="0.8" layer="21" ratio="0">3</text>
+</package>
+<package name="X">
+<description>&lt;b&gt;SMALL SIGNAL&lt;/b&gt;&lt;p&gt;
+X&lt;p&gt;
+L×W×H : 5.5mm×5.5mm×5.0mm&lt;p&gt;
+grid 2.54mm vertical&lt;p&gt;</description>
+<wire x1="-2.3" y1="0" x2="2.3" y2="0" width="0.2" layer="21" curve="-180" cap="flat"/>
+<wire x1="1.7" y1="-1.5" x2="-1.7" y2="-1.5" width="0.2" layer="21"/>
+<wire x1="2.3" y1="0" x2="1.7" y2="-1.5" width="0.2" layer="21" curve="-41.11209" cap="flat"/>
+<wire x1="-2.3" y1="0" x2="-1.7" y2="-1.5" width="0.2" layer="21" curve="41.11209" cap="flat"/>
+<circle x="0" y="0" radius="2.75" width="0.2" layer="21"/>
+<pad name="2" x="0" y="0" drill="1"/>
+<pad name="1" x="-2.54" y="0" drill="1"/>
+<pad name="3" x="2.54" y="0" drill="1"/>
+<text x="-1.7" y="-4.1" size="1" layer="25" ratio="0">&gt;NAME</text>
+<text x="-2.7" y="3" size="1" layer="27" ratio="0">&gt;VALUE</text>
+<text x="-1" y="1.1" size="0.8" layer="21" ratio="0" rot="R180">1</text>
+<text x="0.4" y="1.8" size="0.8" layer="21" ratio="0" rot="R180">2</text>
+<text x="1.8" y="1.1" size="0.8" layer="21" ratio="0" rot="R180">3</text>
+</package>
+<package name="TO-92-HORIZONTAL">
+<description>&lt;b&gt;SMALL SIGNAL&lt;/b&gt;&lt;p&gt;
+TO-92&lt;p&gt;
+L×W×H : 4.8mm×3.8mm×5.0mm&lt;p&gt;
+grid 2.54mm horizontal&lt;p&gt;
+(TO-92/SC-43)</description>
+<wire x1="0" y1="0" x2="0" y2="1.27" width="0.5" layer="51"/>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="1.27" width="0.5" layer="51"/>
+<wire x1="2.54" y1="0" x2="1.27" y2="1.27" width="0.5" layer="51"/>
+<wire x1="-2.4" y1="3.82" x2="2.4" y2="3.82" width="0.2" layer="21"/>
+<wire x1="-2.4" y1="8.82" x2="2.4" y2="8.82" width="0.2" layer="21"/>
+<wire x1="-2.4" y1="3.82" x2="-2.4" y2="8.82" width="0.2" layer="21"/>
+<wire x1="2.4" y1="3.82" x2="2.4" y2="8.82" width="0.2" layer="21"/>
+<wire x1="-1.27" y1="1.47" x2="-1.27" y2="3.51" width="0.5" layer="21"/>
+<wire x1="0" y1="1.47" x2="0" y2="3.51" width="0.5" layer="21"/>
+<wire x1="1.27" y1="1.47" x2="1.27" y2="3.51" width="0.5" layer="21"/>
+<pad name="2" x="0" y="0" drill="1"/>
+<pad name="1" x="-2.54" y="0" drill="1"/>
+<pad name="3" x="2.54" y="0" drill="1"/>
+<text x="2.4" y="-1.8" size="0.8" layer="21" ratio="0">3</text>
+<text x="-0.4" y="-1.8" size="0.8" layer="21" ratio="0">2</text>
+<text x="-3.2" y="-1.8" size="0.8" layer="21" ratio="0">1</text>
+<text x="-2.7" y="3.67" size="1" layer="27" ratio="0" rot="R90">&gt;VALUE</text>
+<text x="3.7" y="3.67" size="1" layer="25" ratio="0" rot="R90">&gt;NAME</text>
+<rectangle x1="-1.57" y1="3.51" x2="-0.97" y2="3.81" layer="21"/>
+<rectangle x1="0.97" y1="3.51" x2="1.57" y2="3.81" layer="21"/>
+<rectangle x1="-0.3" y1="3.51" x2="0.3" y2="3.81" layer="21"/>
+</package>
+<package name="TO-92L">
+<description>&lt;b&gt;SMALL SIGNAL/POWER&lt;/b&gt;&lt;p&gt;
+TO-92L&lt;p&gt;
+L×W×H : 4.8mm×3.8mm×8.0mm&lt;p&gt;
+grid 2.54mm vertical&lt;p&gt;
+(TO-92mod/SC-51)</description>
+<wire x1="-2.3" y1="0" x2="2.3" y2="0" width="0.2" layer="21" curve="-180" cap="flat"/>
+<wire x1="1.7" y1="-1.5" x2="-1.7" y2="-1.5" width="0.2" layer="21"/>
+<wire x1="2.3" y1="0" x2="1.7" y2="-1.5" width="0.2" layer="21" curve="-41.11209" cap="flat"/>
+<wire x1="-2.3" y1="0" x2="-1.7" y2="-1.5" width="0.2" layer="21" curve="41.11209" cap="flat"/>
+<pad name="2" x="0" y="0" drill="1"/>
+<pad name="1" x="-2.54" y="0" drill="1"/>
+<pad name="3" x="2.54" y="0" drill="1"/>
+<text x="-2.7" y="2.6" size="1" layer="27" ratio="0">&gt;VALUE</text>
+<text x="-1.8" y="-2.8" size="1" layer="25" ratio="0">&gt;NAME</text>
+<text x="-1" y="1.1" size="0.8" layer="21" ratio="0" rot="R180">1</text>
+<text x="0.4" y="1.8" size="0.8" layer="21" ratio="0" rot="R180">2</text>
+<text x="1.8" y="1.1" size="0.8" layer="21" ratio="0" rot="R180">3</text>
+</package>
+<package name="TO-92L-HORIZONTAL">
+<description>&lt;b&gt;SMALL SIGNAL/POWER&lt;/b&gt;&lt;p&gt;
+TO-92L&lt;p&gt;
+L×W×H : 4.8mm×3.8mm×8.0mm&lt;p&gt;
+grid 2.54mm horizontal&lt;p&gt;
+(TO-92mod/SC-51)</description>
+<wire x1="0" y1="0" x2="0" y2="1.27" width="0.5" layer="51"/>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="1.27" width="0.5" layer="51"/>
+<wire x1="2.54" y1="0" x2="1.27" y2="1.27" width="0.5" layer="51"/>
+<wire x1="-1.27" y1="1.47" x2="-1.27" y2="3.51" width="0.5" layer="21"/>
+<wire x1="0" y1="1.47" x2="0" y2="3.51" width="0.5" layer="21"/>
+<wire x1="1.27" y1="1.47" x2="1.27" y2="3.51" width="0.5" layer="21"/>
+<wire x1="2.4" y1="3.82" x2="2.4" y2="11.82" width="0.2" layer="21"/>
+<wire x1="-2.4" y1="3.82" x2="2.4" y2="3.82" width="0.2" layer="21"/>
+<wire x1="-2.4" y1="11.82" x2="2.4" y2="11.82" width="0.2" layer="21"/>
+<wire x1="-2.4" y1="3.82" x2="-2.4" y2="11.82" width="0.2" layer="21"/>
+<pad name="2" x="0" y="0" drill="1"/>
+<pad name="1" x="-2.54" y="0" drill="1"/>
+<pad name="3" x="2.54" y="0" drill="1"/>
+<text x="2.4" y="-1.8" size="0.8" layer="21" ratio="0">3</text>
+<text x="-0.4" y="-1.8" size="0.8" layer="21" ratio="0">2</text>
+<text x="-3.2" y="-1.8" size="0.8" layer="21" ratio="0">1</text>
+<text x="-2.7" y="4.07" size="1" layer="27" ratio="0" rot="R90">&gt;VALUE</text>
+<text x="3.7" y="4.07" size="1" layer="25" ratio="0" rot="R90">&gt;NAME</text>
+<rectangle x1="-1.57" y1="3.51" x2="-0.97" y2="3.81" layer="21"/>
+<rectangle x1="0.97" y1="3.51" x2="1.57" y2="3.81" layer="21"/>
+<rectangle x1="-0.3" y1="3.51" x2="0.3" y2="3.81" layer="21"/>
+</package>
+<package name="TO-92">
+<description>&lt;b&gt;SMALL SIGNAL&lt;/b&gt;&lt;p&gt;
+TO-92&lt;p&gt;
+L×W×H : 4.8mm×3.8mm×5.0mm&lt;p&gt;
+grid 2.54mm vertical&lt;p&gt;
+(TO-92/SC-43)</description>
+<wire x1="-2.3" y1="0" x2="2.3" y2="0" width="0.2" layer="21" curve="-180" cap="flat"/>
+<wire x1="1.7" y1="-1.5" x2="-1.7" y2="-1.5" width="0.2" layer="21"/>
+<wire x1="2.3" y1="0" x2="1.7" y2="-1.5" width="0.2" layer="21" curve="-41.11209" cap="flat"/>
+<wire x1="-2.3" y1="0" x2="-1.7" y2="-1.5" width="0.2" layer="21" curve="41.11209" cap="flat"/>
+<pad name="2" x="0" y="0" drill="1"/>
+<pad name="1" x="-2.54" y="0" drill="1"/>
+<pad name="3" x="2.54" y="0" drill="1"/>
+<text x="-2.7" y="2.6" size="1" layer="27" ratio="0">&gt;VALUE</text>
+<text x="-1.8" y="-2.8" size="1" layer="25" ratio="0">&gt;NAME</text>
+<text x="-1" y="1.1" size="0.8" layer="21" ratio="0" rot="R180">1</text>
+<text x="0.4" y="1.8" size="0.8" layer="21" ratio="0" rot="R180">2</text>
+<text x="1.8" y="1.1" size="0.8" layer="21" ratio="0" rot="R180">3</text>
+</package>
+<package name="TO-3">
+<description>&lt;b&gt;POWER&lt;/b&gt;&lt;p&gt;
+TO-3&lt;p&gt;
+L×W×H : 40mm×26mm×9mm&lt;p&gt;</description>
+<wire x1="17.59" y1="3.71" x2="7.51" y2="10.59" width="0.2" layer="21"/>
+<wire x1="-17.59" y1="-3.81" x2="-7.51" y2="-10.59" width="0.2" layer="21"/>
+<wire x1="-7.51" y1="10.59" x2="-17.59" y2="3.71" width="0.2" layer="21"/>
+<wire x1="17.59" y1="-3.81" x2="7.51" y2="-10.59" width="0.2" layer="21"/>
+<wire x1="17.6" y1="3.7" x2="17.6" y2="-3.8" width="0.2" layer="21" curve="-116.955646" cap="flat"/>
+<wire x1="-17.6" y1="3.7" x2="-17.6" y2="-3.8" width="0.2" layer="21" curve="111.568596" cap="flat"/>
+<wire x1="7.5" y1="10.6" x2="-7.5" y2="10.6" width="0.2" layer="21" curve="70.562416" cap="flat"/>
+<wire x1="7.5" y1="-10.6" x2="-7.5" y2="-10.6" width="0.2" layer="21" curve="-70.562416" cap="flat"/>
+<circle x="0" y="0" radius="9.75" width="0.2" layer="21"/>
+<circle x="0" y="0" radius="11.5" width="0.2" layer="21"/>
+<circle x="15" y="0" radius="2" width="0.2" layer="21"/>
+<circle x="-15" y="0" radius="2" width="0.2" layer="21"/>
+<pad name="3" x="15" y="0" drill="4" diameter="7"/>
+<pad name="4" x="-15" y="0" drill="4" diameter="7"/>
+<pad name="1" x="-2" y="5.5" drill="1" diameter="2.5"/>
+<pad name="2" x="-2" y="-5.5" drill="1" diameter="2.5"/>
+<text x="-3.6" y="-2.4" size="2" layer="25" ratio="0">&gt;NAME</text>
+<text x="-5.6" y="0.4" size="2" layer="27" ratio="0">&gt;VALUE</text>
+<text x="-4.2" y="3.2" size="1" layer="27" ratio="0">1</text>
+<text x="-4.2" y="-4.2" size="1" layer="27" ratio="0">2</text>
+<text x="14.5" y="-5.1" size="1" layer="27" ratio="0">3</text>
+<text x="-15.5" y="-5.1" size="1" layer="27" ratio="0">4</text>
+</package>
+<package name="TO-3P">
+<description>&lt;b&gt;POWER&lt;/b&gt;&lt;p&gt;
+TO-3P&lt;p&gt;
+L×W×H : 16.0mm×4.8mm×20.0mm&lt;p&gt;
+grid 5.45mm vertical&lt;p&gt;
+(TO-3P/SC-65)</description>
+<wire x1="8" y1="-1.5" x2="8" y2="3.3" width="0.2" layer="21"/>
+<wire x1="-8" y1="-1.5" x2="-8" y2="3.3" width="0.2" layer="21"/>
+<wire x1="-8" y1="-1.5" x2="8" y2="-1.5" width="0.2" layer="21"/>
+<wire x1="-8" y1="3.3" x2="8" y2="3.3" width="0.2" layer="21"/>
+<pad name="2" x="0" y="0" drill="1"/>
+<pad name="1" x="-5.45" y="0" drill="1"/>
+<pad name="3" x="5.45" y="0" drill="1"/>
+<text x="-5.8" y="1" size="0.8" layer="21" ratio="0">1</text>
+<text x="-0.4" y="1" size="0.8" layer="21" ratio="0">2</text>
+<text x="5" y="1" size="0.8" layer="21" ratio="0">3</text>
+<text x="-2.7" y="2" size="1" layer="27" ratio="0">&gt;VALUE</text>
+<text x="-1.7" y="-2.8" size="1" layer="25" ratio="0">&gt;NAME</text>
+</package>
+<package name="SC-59">
+<description>&lt;b&gt;CHIP&lt;/b&gt;&lt;p&gt;
+SC-59&lt;p&gt;
+L×W : 2.9mm×1.5mm&lt;p&gt;
+(TO-236mod/SC-59)</description>
+<wire x1="-1.45" y1="0.75" x2="-1.45" y2="-0.75" width="0.1" layer="21"/>
+<wire x1="1.45" y1="0.75" x2="1.45" y2="-0.75" width="0.1" layer="21"/>
+<wire x1="-1.45" y1="0.75" x2="1.45" y2="0.75" width="0.1" layer="21"/>
+<wire x1="-1.45" y1="-0.75" x2="1.45" y2="-0.75" width="0.1" layer="21"/>
+<smd name="3" x="0" y="1.2" dx="0.8" dy="1" layer="1"/>
+<smd name="1" x="-0.95" y="-1.2" dx="0.8" dy="1" layer="1"/>
+<smd name="2" x="0.95" y="-1.2" dx="0.8" dy="1" layer="1"/>
+<text x="-1.7" y="-1.7" size="1" layer="27" ratio="0" rot="R90">&gt;VALUE</text>
+<text x="2.7" y="-1.7" size="1" layer="25" ratio="0" rot="R90">&gt;NAME</text>
+<rectangle x1="-0.2" y1="0.75" x2="0.2" y2="1.25" layer="21"/>
+<rectangle x1="-1.15" y1="-1.25" x2="-0.75" y2="-0.75" layer="21"/>
+<rectangle x1="0.75" y1="-1.25" x2="1.15" y2="-0.75" layer="21"/>
+</package>
+<package name="SC-70">
+<description>&lt;b&gt;CHIP&lt;/b&gt;&lt;p&gt;
+SC-70&lt;p&gt;
+L×W : 2.0mm×1.25mm&lt;p&gt;
+(SOT-323/SC-70)</description>
+<wire x1="-1" y1="0.63" x2="-1" y2="-0.63" width="0.1" layer="21"/>
+<wire x1="1" y1="0.63" x2="1" y2="-0.63" width="0.1" layer="21"/>
+<wire x1="-1" y1="0.63" x2="1" y2="0.63" width="0.1" layer="21"/>
+<wire x1="-1" y1="-0.63" x2="1" y2="-0.63" width="0.1" layer="21"/>
+<smd name="1" x="-0.65" y="-0.93" dx="0.5" dy="0.6" layer="1"/>
+<smd name="2" x="0.65" y="-0.93" dx="0.5" dy="0.6" layer="1"/>
+<smd name="3" x="0" y="0.93" dx="0.5" dy="0.6" layer="1"/>
+<text x="-1.25" y="-0.7" size="1" layer="27" ratio="0" rot="R90">&gt;VALUE</text>
+<text x="2.25" y="-0.7" size="1" layer="25" ratio="0" rot="R90">&gt;NAME</text>
+<rectangle x1="-0.15" y1="0.625" x2="0.15" y2="1.05" layer="21"/>
+<rectangle x1="-0.8" y1="-1.055" x2="-0.5" y2="-0.63" layer="21"/>
+<rectangle x1="0.51" y1="-1.055" x2="0.81" y2="-0.63" layer="21"/>
+</package>
+<package name="SC-62">
+<description>&lt;b&gt;CHIP POWER&lt;/b&gt;&lt;p&gt;
+SC-62&lt;p&gt;
+L×W : 4.6mm×2.5mm&lt;p&gt;
+(SOT-89/SC-62)</description>
+<wire x1="-2.3" y1="1.25" x2="-2.3" y2="-1.25" width="0.1" layer="21"/>
+<wire x1="2.3" y1="1.25" x2="2.3" y2="-1.25" width="0.1" layer="21"/>
+<wire x1="-2.3" y1="1.25" x2="2.3" y2="1.25" width="0.1" layer="21"/>
+<wire x1="-2.3" y1="-1.25" x2="2.3" y2="-1.25" width="0.1" layer="21"/>
+<smd name="1" x="-1.5" y="-2" dx="1" dy="1.5" layer="1"/>
+<smd name="3" x="1.5" y="-2" dx="1" dy="1.5" layer="1"/>
+<smd name="2" x="0" y="0" dx="1" dy="5.5" layer="1"/>
+<text x="-2.55" y="-1.3" size="1" layer="27" ratio="0" rot="R90">&gt;VALUE</text>
+<text x="3.55" y="-1.3" size="1" layer="25" ratio="0" rot="R90">&gt;NAME</text>
+<rectangle x1="-1.75" y1="-2.05" x2="-1.25" y2="-1.25" layer="21"/>
+<rectangle x1="-0.25" y1="-2.05" x2="0.25" y2="-1.25" layer="21"/>
+<rectangle x1="1.25" y1="-2.05" x2="1.75" y2="-1.25" layer="21"/>
+<polygon width="0.01" layer="21">
+<vertex x="-0.9" y="1.25"/>
+<vertex x="0.9" y="1.25"/>
+<vertex x="0.9" y="1.5"/>
+<vertex x="0.25" y="2.15"/>
+<vertex x="-0.25" y="2.15"/>
+<vertex x="-0.9" y="1.5"/>
+</polygon>
+<polygon width="0.01" layer="1" spacing="0.254">
+<vertex x="-0.5" y="-1.25"/>
+<vertex x="-1.1" y="-0.65"/>
+<vertex x="-1.1" y="2.15"/>
+<vertex x="-0.5" y="2.75"/>
+</polygon>
+<polygon width="0.01" layer="1" spacing="0.254">
+<vertex x="0.5" y="2.75"/>
+<vertex x="1.1" y="2.15"/>
+<vertex x="1.1" y="-0.65"/>
+<vertex x="0.5" y="-1.25"/>
+</polygon>
+</package>
+</packages>
+<symbols>
+<symbol name="PNP">
+<wire x1="-5" y1="0" x2="1.1" y2="0" width="0.2" layer="94"/>
+<wire x1="5" y1="5" x2="5" y2="3.2" width="0.2" layer="94"/>
+<wire x1="5" y1="-5" x2="5" y2="-3.2" width="0.2" layer="94"/>
+<wire x1="1.7" y1="0.5" x2="5" y2="3.1" width="0.2" layer="94"/>
+<wire x1="4.99" y1="-3.05" x2="1.69" y2="-0.45" width="0.2" layer="94"/>
+<wire x1="1.72" y1="-0.4" x2="2.78" y2="-0.86" width="0.1" layer="94"/>
+<wire x1="1.69" y1="-0.47" x2="2.35" y2="-1.4" width="0.1" layer="94"/>
+<wire x1="2.77" y1="-0.88" x2="2.35" y2="-1.4" width="0.1" layer="94"/>
+<wire x1="2.7" y1="-0.87" x2="2.34" y2="-1.3" width="0.1" layer="94"/>
+<wire x1="2.64" y1="-0.81" x2="2.29" y2="-1.22" width="0.1" layer="94"/>
+<wire x1="2.55" y1="-0.78" x2="2.24" y2="-1.15" width="0.1" layer="94"/>
+<wire x1="2.46" y1="-0.75" x2="2.18" y2="-1.08" width="0.1" layer="94"/>
+<wire x1="2.39" y1="-0.72" x2="2.13" y2="-1" width="0.1" layer="94"/>
+<wire x1="2.3" y1="-0.68" x2="2.07" y2="-0.94" width="0.1" layer="94"/>
+<wire x1="2.22" y1="-0.65" x2="2.03" y2="-0.86" width="0.1" layer="94"/>
+<wire x1="2.13" y1="-0.62" x2="1.96" y2="-0.82" width="0.1" layer="94"/>
+<wire x1="1.91" y1="-0.72" x2="2.04" y2="-0.59" width="0.1" layer="94"/>
+<circle x="2.5" y="0" radius="4" width="0.2" layer="94"/>
+<text x="-4.8" y="-6" size="1.5" layer="96" ratio="0">&gt;VALUE</text>
+<text x="-4.2" y="4.4" size="1.5" layer="95" ratio="0">&gt;NAME</text>
+<rectangle x1="1.1" y1="-2.4" x2="1.7" y2="2.4" layer="94"/>
+<pin name="B" x="-5" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
+<pin name="C" x="5" y="5" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="E" x="5" y="-5" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+<symbol name="NPN">
+<wire x1="-5" y1="0" x2="1.1" y2="0" width="0.2" layer="94"/>
+<wire x1="5" y1="5" x2="5" y2="3.2" width="0.2" layer="94"/>
+<wire x1="5" y1="-5" x2="5" y2="-3.2" width="0.2" layer="94"/>
+<wire x1="1.7" y1="-0.5" x2="5" y2="-3.1" width="0.2" layer="94"/>
+<wire x1="1.7" y1="0.5" x2="5" y2="3.1" width="0.2" layer="94"/>
+<wire x1="4.98" y1="-3.08" x2="3.88" y2="-2.72" width="0.1" layer="94"/>
+<wire x1="5" y1="-3.08" x2="4.34" y2="-2.13" width="0.1" layer="94"/>
+<wire x1="3.88" y1="-2.71" x2="4.34" y2="-2.13" width="0.1" layer="94"/>
+<wire x1="3.96" y1="-2.72" x2="4.35" y2="-2.25" width="0.1" layer="94"/>
+<wire x1="4.05" y1="-2.74" x2="4.4" y2="-2.33" width="0.1" layer="94"/>
+<wire x1="4.14" y1="-2.77" x2="4.45" y2="-2.4" width="0.1" layer="94"/>
+<wire x1="4.23" y1="-2.8" x2="4.51" y2="-2.47" width="0.1" layer="94"/>
+<wire x1="4.3" y1="-2.83" x2="4.56" y2="-2.55" width="0.1" layer="94"/>
+<wire x1="4.39" y1="-2.87" x2="4.62" y2="-2.61" width="0.1" layer="94"/>
+<wire x1="4.47" y1="-2.9" x2="4.66" y2="-2.69" width="0.1" layer="94"/>
+<wire x1="4.56" y1="-2.93" x2="4.73" y2="-2.73" width="0.1" layer="94"/>
+<circle x="2.5" y="0" radius="4" width="0.2" layer="94"/>
+<text x="-4.8" y="-6" size="1.5" layer="96" ratio="0">&gt;VALUE</text>
+<text x="-4.2" y="4.4" size="1.5" layer="95" ratio="0">&gt;NAME</text>
+<rectangle x1="1.1" y1="-2.4" x2="1.7" y2="2.4" layer="94"/>
+<pin name="B" x="-5" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
+<pin name="C" x="5" y="5" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="E" x="5" y="-5" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+<symbol name="P-JUNCTION">
+<wire x1="5" y1="5" x2="5" y2="3.2" width="0.2" layer="94"/>
+<wire x1="5" y1="-5" x2="5" y2="-3.2" width="0.2" layer="94"/>
+<wire x1="1.6" y1="-2" x2="5" y2="-2" width="0.2" layer="94"/>
+<wire x1="5" y1="-2" x2="5" y2="-3.1" width="0.2" layer="94"/>
+<wire x1="1.6" y1="2" x2="5" y2="2" width="0.2" layer="94"/>
+<wire x1="5" y1="2" x2="5" y2="3.1" width="0.2" layer="94"/>
+<wire x1="-5" y1="-2" x2="1" y2="-2" width="0.2" layer="94"/>
+<wire x1="-0.318" y1="-2" x2="-0.826" y2="-2" width="0.1524" layer="94"/>
+<wire x1="-0.926" y1="-2" x2="0.344" y2="-2.508" width="0.1524" layer="94"/>
+<wire x1="0.344" y1="-2.508" x2="0.344" y2="-1.492" width="0.1524" layer="94"/>
+<wire x1="0.344" y1="-1.492" x2="-0.926" y2="-2" width="0.1524" layer="94"/>
+<wire x1="-0.418" y1="-2" x2="-0.545" y2="-2" width="0.1524" layer="94"/>
+<wire x1="-0.545" y1="-2" x2="-0.926" y2="-2" width="0.1524" layer="94"/>
+<wire x1="-0.545" y1="-2" x2="0.217" y2="-2.254" width="0.3048" layer="94"/>
+<wire x1="0.217" y1="-2.254" x2="0.217" y2="-1.746" width="0.3048" layer="94"/>
+<wire x1="0.217" y1="-1.746" x2="-0.418" y2="-2" width="0.3048" layer="94"/>
+<circle x="2.5" y="0" radius="4" width="0.2" layer="94"/>
+<text x="-4.8" y="-6" size="1.5" layer="96" ratio="0">&gt;VALUE</text>
+<text x="-4.2" y="4.4" size="1.5" layer="95" ratio="0">&gt;NAME</text>
+<rectangle x1="1" y1="-2.6" x2="1.6" y2="2.6" layer="94"/>
+<pin name="D" x="5" y="5" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="S" x="5" y="-5" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="G" x="-5" y="-2" visible="off" length="point" direction="pas" swaplevel="1"/>
+</symbol>
+<symbol name="N-JUNCTION">
+<wire x1="5" y1="5" x2="5" y2="3.2" width="0.2" layer="94"/>
+<wire x1="5" y1="-5" x2="5" y2="-3.2" width="0.2" layer="94"/>
+<wire x1="1.6" y1="-2" x2="5" y2="-2" width="0.2" layer="94"/>
+<wire x1="5" y1="-2" x2="5" y2="-3.1" width="0.2" layer="94"/>
+<wire x1="1.6" y1="2" x2="5" y2="2" width="0.2" layer="94"/>
+<wire x1="5" y1="2" x2="5" y2="3.1" width="0.2" layer="94"/>
+<wire x1="0.926" y1="-2" x2="-0.344" y2="-1.492" width="0.1524" layer="94"/>
+<wire x1="-0.344" y1="-1.492" x2="-0.344" y2="-2.508" width="0.1524" layer="94"/>
+<wire x1="-0.344" y1="-2.508" x2="0.926" y2="-2" width="0.1524" layer="94"/>
+<wire x1="0.418" y1="-2" x2="0.545" y2="-2" width="0.1524" layer="94"/>
+<wire x1="0.545" y1="-2" x2="0.8" y2="-2" width="0.1524" layer="94"/>
+<wire x1="0.8" y1="-2" x2="0.926" y2="-2" width="0.1524" layer="94"/>
+<wire x1="0.545" y1="-2" x2="-0.217" y2="-1.746" width="0.3048" layer="94"/>
+<wire x1="-0.217" y1="-1.746" x2="-0.217" y2="-2.254" width="0.3048" layer="94"/>
+<wire x1="-0.217" y1="-2.254" x2="0.418" y2="-2" width="0.3048" layer="94"/>
+<wire x1="-5" y1="-2" x2="0.8" y2="-2" width="0.2" layer="94"/>
+<circle x="2.5" y="0" radius="4" width="0.2" layer="94"/>
+<text x="-4.8" y="-6" size="1.5" layer="96" ratio="0">&gt;VALUE</text>
+<text x="-4.2" y="4.4" size="1.5" layer="95" ratio="0">&gt;NAME</text>
+<rectangle x1="1" y1="-2.6" x2="1.6" y2="2.6" layer="94"/>
+<pin name="D" x="5" y="5" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="S" x="5" y="-5" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="G" x="-5" y="-2" visible="off" length="point" direction="pas" swaplevel="1"/>
+</symbol>
+<symbol name="P-MOS-DE">
+<wire x1="5" y1="5" x2="5" y2="3.2" width="0.2" layer="94"/>
+<wire x1="5" y1="-5" x2="5" y2="-3.2" width="0.2" layer="94"/>
+<wire x1="2.3" y1="-2" x2="5" y2="-2" width="0.2" layer="94"/>
+<wire x1="5" y1="-2" x2="5" y2="-3.1" width="0.2" layer="94"/>
+<wire x1="2.3" y1="2" x2="5" y2="2" width="0.2" layer="94"/>
+<wire x1="5" y1="2" x2="5" y2="3.1" width="0.2" layer="94"/>
+<wire x1="-5" y1="-2" x2="0.9" y2="-2" width="0.2" layer="94"/>
+<wire x1="0.9" y1="2" x2="0.9" y2="-2" width="0.2" layer="94"/>
+<wire x1="5" y1="-2" x2="5" y2="0" width="0.2" layer="94"/>
+<wire x1="4.826" y1="0" x2="3.556" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="3.556" y1="0.508" x2="3.556" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="3.556" y1="-0.508" x2="4.826" y2="0" width="0.1524" layer="94"/>
+<wire x1="4.318" y1="0" x2="4.445" y2="0" width="0.1524" layer="94"/>
+<wire x1="4.445" y1="0" x2="3.683" y2="0.254" width="0.3048" layer="94"/>
+<wire x1="3.683" y1="0.254" x2="3.683" y2="-0.254" width="0.3048" layer="94"/>
+<wire x1="3.683" y1="-0.254" x2="4.318" y2="0" width="0.3048" layer="94"/>
+<wire x1="2.3" y1="0" x2="5" y2="0" width="0.2" layer="94"/>
+<circle x="2.5" y="0" radius="4" width="0.2" layer="94"/>
+<circle x="5" y="-2" radius="0.1" width="0.5" layer="94"/>
+<text x="-4.8" y="-6" size="1.5" layer="96" ratio="0">&gt;VALUE</text>
+<text x="-4.2" y="4.4" size="1.5" layer="95" ratio="0">&gt;NAME</text>
+<rectangle x1="1.7" y1="-2.6" x2="2.3" y2="2.6" layer="94"/>
+<pin name="D" x="5" y="5" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="S" x="5" y="-5" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="G" x="-5" y="-2" visible="off" length="point" direction="pas" swaplevel="1"/>
+</symbol>
+<symbol name="N-MOS-DE">
+<wire x1="5" y1="5" x2="5" y2="3.2" width="0.2" layer="94"/>
+<wire x1="5" y1="-5" x2="5" y2="-3.2" width="0.2" layer="94"/>
+<wire x1="2.3" y1="-2" x2="5" y2="-2" width="0.2" layer="94"/>
+<wire x1="5" y1="-2" x2="5" y2="-3.1" width="0.2" layer="94"/>
+<wire x1="2.3" y1="2" x2="5" y2="2" width="0.2" layer="94"/>
+<wire x1="5" y1="2" x2="5" y2="3.1" width="0.2" layer="94"/>
+<wire x1="-5" y1="-2" x2="0.9" y2="-2" width="0.2" layer="94"/>
+<wire x1="0.9" y1="2" x2="0.9" y2="-2" width="0.2" layer="94"/>
+<wire x1="2.374" y1="0" x2="3.644" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="3.644" y1="-0.508" x2="3.644" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="3.644" y1="0.508" x2="2.374" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.882" y1="0" x2="2.755" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.755" y1="0" x2="2.6" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.6" y1="0" x2="2.374" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.755" y1="0" x2="3.517" y2="-0.254" width="0.3048" layer="94"/>
+<wire x1="3.517" y1="-0.254" x2="3.517" y2="0.254" width="0.3048" layer="94"/>
+<wire x1="3.517" y1="0.254" x2="2.882" y2="0" width="0.3048" layer="94"/>
+<wire x1="5" y1="-2" x2="5" y2="0" width="0.2" layer="94"/>
+<wire x1="5" y1="0" x2="2.6" y2="0" width="0.2" layer="94"/>
+<circle x="2.5" y="0" radius="4" width="0.2" layer="94"/>
+<circle x="5" y="-2" radius="0.1" width="0.5" layer="94"/>
+<text x="-4.8" y="-6" size="1.5" layer="96" ratio="0">&gt;VALUE</text>
+<text x="-4.2" y="4.4" size="1.5" layer="95" ratio="0">&gt;NAME</text>
+<rectangle x1="1.7" y1="-2.6" x2="2.3" y2="2.6" layer="94"/>
+<pin name="D" x="5" y="5" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="S" x="5" y="-5" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="G" x="-5" y="-2" visible="off" length="point" direction="pas" swaplevel="1"/>
+</symbol>
+<symbol name="N-MOS-E">
+<wire x1="5" y1="5" x2="5" y2="3.2" width="0.2" layer="94"/>
+<wire x1="5" y1="-5" x2="5" y2="-3.2" width="0.2" layer="94"/>
+<wire x1="2.3" y1="-2" x2="5" y2="-2" width="0.2" layer="94"/>
+<wire x1="5" y1="-2" x2="5" y2="-3.1" width="0.2" layer="94"/>
+<wire x1="2.3" y1="2" x2="5" y2="2" width="0.2" layer="94"/>
+<wire x1="5" y1="2" x2="5" y2="3.1" width="0.2" layer="94"/>
+<wire x1="0.9" y1="2" x2="0.9" y2="-2" width="0.2" layer="94"/>
+<wire x1="0.9" y1="-2" x2="0.9" y2="-1.8" width="0.2" layer="94"/>
+<wire x1="2.374" y1="0" x2="3.644" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="3.644" y1="-0.508" x2="3.644" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="3.644" y1="0.508" x2="2.374" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.882" y1="0" x2="2.755" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.755" y1="0" x2="2.6" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.6" y1="0" x2="2.374" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.755" y1="0" x2="3.517" y2="-0.254" width="0.3048" layer="94"/>
+<wire x1="3.517" y1="-0.254" x2="3.517" y2="0.254" width="0.3048" layer="94"/>
+<wire x1="3.517" y1="0.254" x2="2.882" y2="0" width="0.3048" layer="94"/>
+<wire x1="5" y1="-2" x2="5" y2="0" width="0.2" layer="94"/>
+<wire x1="5" y1="0" x2="2.6" y2="0" width="0.2" layer="94"/>
+<wire x1="-5" y1="-2" x2="0.9" y2="-2" width="0.2" layer="94"/>
+<circle x="2.5" y="0" radius="4" width="0.2" layer="94"/>
+<circle x="5" y="-2" radius="0.1" width="0.5" layer="94"/>
+<text x="-4.8" y="-6" size="1.5" layer="96" ratio="0">&gt;VALUE</text>
+<text x="-4.2" y="4.4" size="1.5" layer="95" ratio="0">&gt;NAME</text>
+<rectangle x1="1.7" y1="1.4" x2="2.3" y2="2.6" layer="94"/>
+<rectangle x1="1.7" y1="-0.6" x2="2.3" y2="0.6" layer="94"/>
+<rectangle x1="1.7" y1="-2.6" x2="2.3" y2="-1.4" layer="94"/>
+<pin name="D" x="5" y="5" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="S" x="5" y="-5" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="G" x="-5" y="-2" visible="off" length="point" direction="pas" swaplevel="1"/>
+</symbol>
+<symbol name="P-MOS-E">
+<wire x1="5" y1="5" x2="5" y2="3.2" width="0.2" layer="94"/>
+<wire x1="5" y1="-5" x2="5" y2="-3.2" width="0.2" layer="94"/>
+<wire x1="2.3" y1="-2" x2="5" y2="-2" width="0.2" layer="94"/>
+<wire x1="5" y1="-2" x2="5" y2="-3.1" width="0.2" layer="94"/>
+<wire x1="2.3" y1="2" x2="5" y2="2" width="0.2" layer="94"/>
+<wire x1="5" y1="2" x2="5" y2="3.1" width="0.2" layer="94"/>
+<wire x1="-5" y1="-2" x2="0.84" y2="-2" width="0.2" layer="94"/>
+<wire x1="0.9" y1="2" x2="0.9" y2="-2" width="0.2" layer="94"/>
+<wire x1="5" y1="-2" x2="5" y2="0" width="0.2" layer="94"/>
+<wire x1="4.826" y1="0" x2="3.556" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="3.556" y1="0.508" x2="3.556" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="3.556" y1="-0.508" x2="4.826" y2="0" width="0.1524" layer="94"/>
+<wire x1="4.318" y1="0" x2="4.445" y2="0" width="0.1524" layer="94"/>
+<wire x1="4.445" y1="0" x2="3.683" y2="0.254" width="0.3048" layer="94"/>
+<wire x1="3.683" y1="0.254" x2="3.683" y2="-0.254" width="0.3048" layer="94"/>
+<wire x1="3.683" y1="-0.254" x2="4.318" y2="0" width="0.3048" layer="94"/>
+<wire x1="2.3" y1="0" x2="5" y2="0" width="0.2" layer="94"/>
+<circle x="2.5" y="0" radius="4" width="0.2" layer="94"/>
+<circle x="5" y="-2" radius="0.1" width="0.5" layer="94"/>
+<text x="-4.8" y="-6" size="1.5" layer="96" ratio="0">&gt;VALUE</text>
+<text x="-4.2" y="4.4" size="1.5" layer="95" ratio="0">&gt;NAME</text>
+<rectangle x1="1.7" y1="1.4" x2="2.3" y2="2.6" layer="94"/>
+<rectangle x1="1.7" y1="-0.6" x2="2.3" y2="0.6" layer="94"/>
+<rectangle x1="1.7" y1="-2.6" x2="2.3" y2="-1.4" layer="94"/>
+<pin name="D" x="5" y="5" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="S" x="5" y="-5" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="G" x="-5" y="-2" visible="off" length="point" direction="pas" swaplevel="1"/>
+</symbol>
+<symbol name="AH9246">
+<wire x1="-10" y1="5" x2="10" y2="5" width="0.127" layer="94"/>
+<wire x1="10" y1="5" x2="10" y2="-5" width="0.127" layer="94"/>
+<wire x1="10" y1="-5" x2="-10" y2="-5" width="0.127" layer="94"/>
+<wire x1="-10" y1="-5" x2="-10" y2="5" width="0.127" layer="94"/>
+<pin name="GND" x="0" y="7.7" visible="pin" length="short" direction="pwr" rot="R270"/>
+<pin name="OUTPUT" x="5.176" y="-7.7" visible="pin" length="short" direction="out" rot="R90"/>
+<pin name="VCC" x="-5.16" y="-7.524" visible="pin" length="short" direction="pwr" rot="R90"/>
+<text x="-10" y="5" size="1.778" layer="94">&gt;Name</text>
+<text x="3" y="5" size="1.778" layer="94">&gt;Value</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TR-NPN-" prefix="TR" uservalue="yes">
+<description>&lt;b&gt;TRANSISTOR&lt;/B&gt;&lt;P&gt;
+(Bipolar transistor)&lt;p&gt;
+NPN type&lt;p&gt;
+Japanese symbol</description>
+<gates>
+<gate name="NPN-" symbol="NPN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="TO-220-BCE" package="TO-220">
+<connects>
+<connect gate="NPN-" pin="B" pad="1"/>
+<connect gate="NPN-" pin="C" pad="2"/>
+<connect gate="NPN-" pin="E" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TO-92-2-ECB" package="TO-92-2">
+<connects>
+<connect gate="NPN-" pin="B" pad="3"/>
+<connect gate="NPN-" pin="C" pad="2"/>
+<connect gate="NPN-" pin="E" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="X-ECB" package="X">
+<connects>
+<connect gate="NPN-" pin="B" pad="3"/>
+<connect gate="NPN-" pin="C" pad="2"/>
+<connect gate="NPN-" pin="E" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TO-92-H-ECB" package="TO-92-HORIZONTAL">
+<connects>
+<connect gate="NPN-" pin="B" pad="3"/>
+<connect gate="NPN-" pin="C" pad="2"/>
+<connect gate="NPN-" pin="E" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TO-92L-ECB" package="TO-92L">
+<connects>
+<connect gate="NPN-" pin="B" pad="3"/>
+<connect gate="NPN-" pin="C" pad="2"/>
+<connect gate="NPN-" pin="E" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TO-92L-H-ECB" package="TO-92L-HORIZONTAL">
+<connects>
+<connect gate="NPN-" pin="B" pad="3"/>
+<connect gate="NPN-" pin="C" pad="2"/>
+<connect gate="NPN-" pin="E" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TO-92-ECB" package="TO-92">
+<connects>
+<connect gate="NPN-" pin="B" pad="3"/>
+<connect gate="NPN-" pin="C" pad="2"/>
+<connect gate="NPN-" pin="E" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TO-3-BEC" package="TO-3">
+<connects>
+<connect gate="NPN-" pin="B" pad="1"/>
+<connect gate="NPN-" pin="C" pad="3"/>
+<connect gate="NPN-" pin="E" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TO-92-1-ECB" package="TO-92-1">
+<connects>
+<connect gate="NPN-" pin="B" pad="3"/>
+<connect gate="NPN-" pin="C" pad="2"/>
+<connect gate="NPN-" pin="E" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TO-3P-BCE" package="TO-3P">
+<connects>
+<connect gate="NPN-" pin="B" pad="1"/>
+<connect gate="NPN-" pin="C" pad="2"/>
+<connect gate="NPN-" pin="E" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SC-59-BEC" package="SC-59">
+<connects>
+<connect gate="NPN-" pin="B" pad="1"/>
+<connect gate="NPN-" pin="C" pad="3"/>
+<connect gate="NPN-" pin="E" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SC-70-BEC" package="SC-70">
+<connects>
+<connect gate="NPN-" pin="B" pad="1"/>
+<connect gate="NPN-" pin="C" pad="3"/>
+<connect gate="NPN-" pin="E" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SC-62-BCE" package="SC-62">
+<connects>
+<connect gate="NPN-" pin="B" pad="1"/>
+<connect gate="NPN-" pin="C" pad="2"/>
+<connect gate="NPN-" pin="E" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TR-PNP-" prefix="TR" uservalue="yes">
+<description>&lt;b&gt;TRANSISTOR&lt;/B&gt;&lt;P&gt;
+(Bipolar transistor)&lt;p&gt;
+PNP type&lt;p&gt;
+Japanese symbol</description>
+<gates>
+<gate name="PNP-" symbol="PNP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="TO-220-BCE" package="TO-220">
+<connects>
+<connect gate="PNP-" pin="B" pad="1"/>
+<connect gate="PNP-" pin="C" pad="2"/>
+<connect gate="PNP-" pin="E" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TO-92-2-ECB" package="TO-92-2">
+<connects>
+<connect gate="PNP-" pin="B" pad="3"/>
+<connect gate="PNP-" pin="C" pad="2"/>
+<connect gate="PNP-" pin="E" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="X-ECB" package="X">
+<connects>
+<connect gate="PNP-" pin="B" pad="3"/>
+<connect gate="PNP-" pin="C" pad="2"/>
+<connect gate="PNP-" pin="E" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TO-92-H-ECB" package="TO-92-HORIZONTAL">
+<connects>
+<connect gate="PNP-" pin="B" pad="3"/>
+<connect gate="PNP-" pin="C" pad="2"/>
+<connect gate="PNP-" pin="E" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TO-92L-ECB" package="TO-92L">
+<connects>
+<connect gate="PNP-" pin="B" pad="3"/>
+<connect gate="PNP-" pin="C" pad="2"/>
+<connect gate="PNP-" pin="E" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TO-92L-H-ECB" package="TO-92L-HORIZONTAL">
+<connects>
+<connect gate="PNP-" pin="B" pad="3"/>
+<connect gate="PNP-" pin="C" pad="2"/>
+<connect gate="PNP-" pin="E" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TO-92-ECB" package="TO-92">
+<connects>
+<connect gate="PNP-" pin="B" pad="3"/>
+<connect gate="PNP-" pin="C" pad="2"/>
+<connect gate="PNP-" pin="E" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TO-3-BEC" package="TO-3">
+<connects>
+<connect gate="PNP-" pin="B" pad="1"/>
+<connect gate="PNP-" pin="C" pad="3"/>
+<connect gate="PNP-" pin="E" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TO-92-1-ECB" package="TO-92-1">
+<connects>
+<connect gate="PNP-" pin="B" pad="3"/>
+<connect gate="PNP-" pin="C" pad="2"/>
+<connect gate="PNP-" pin="E" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TO-3P-BCE" package="TO-3P">
+<connects>
+<connect gate="PNP-" pin="B" pad="1"/>
+<connect gate="PNP-" pin="C" pad="2"/>
+<connect gate="PNP-" pin="E" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SC-59-BEC" package="SC-59">
+<connects>
+<connect gate="PNP-" pin="B" pad="1"/>
+<connect gate="PNP-" pin="C" pad="3"/>
+<connect gate="PNP-" pin="E" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SC-70-BEC" package="SC-70">
+<connects>
+<connect gate="PNP-" pin="B" pad="1"/>
+<connect gate="PNP-" pin="C" pad="3"/>
+<connect gate="PNP-" pin="E" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SC-62-BCE" package="SC-62">
+<connects>
+<connect gate="PNP-" pin="B" pad="1"/>
+<connect gate="PNP-" pin="C" pad="2"/>
+<connect gate="PNP-" pin="E" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JFET-N-" prefix="FET" uservalue="yes">
+<description>&lt;b&gt;FIELD EFFECT TRANSISTOR&lt;/B&gt;&lt;P&gt;
+(Unipolar transistor)&lt;p&gt;
+Junction FET (Depression)&lt;p&gt;
+N channel type&lt;P&gt;
+Japanese symbol&lt;p&gt;</description>
+<gates>
+<gate name="JFET-N-" symbol="N-JUNCTION" x="0" y="0"/>
+</gates>
+<devices>
+<device name="TO-92-DSG" package="TO-92">
+<connects>
+<connect gate="JFET-N-" pin="D" pad="1"/>
+<connect gate="JFET-N-" pin="G" pad="3"/>
+<connect gate="JFET-N-" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SC-59-GDS" package="SC-59">
+<connects>
+<connect gate="JFET-N-" pin="D" pad="2"/>
+<connect gate="JFET-N-" pin="G" pad="1"/>
+<connect gate="JFET-N-" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SC-70-GDS" package="SC-70">
+<connects>
+<connect gate="JFET-N-" pin="D" pad="2"/>
+<connect gate="JFET-N-" pin="G" pad="1"/>
+<connect gate="JFET-N-" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JFET-P-" prefix="FET" uservalue="yes">
+<description>&lt;b&gt;FIELD EFFECT TRANSISTOR&lt;/B&gt;&lt;P&gt;
+(Unipolar transistor)&lt;p&gt;
+Junction FET (Depression)&lt;p&gt;
+P channel type&lt;p&gt;
+Japanese symbol</description>
+<gates>
+<gate name="JFET-P-" symbol="P-JUNCTION" x="0" y="0"/>
+</gates>
+<devices>
+<device name="TO-92-DSG" package="TO-92">
+<connects>
+<connect gate="JFET-P-" pin="D" pad="1"/>
+<connect gate="JFET-P-" pin="G" pad="3"/>
+<connect gate="JFET-P-" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SC-59-GDS" package="SC-59">
+<connects>
+<connect gate="JFET-P-" pin="D" pad="2"/>
+<connect gate="JFET-P-" pin="G" pad="1"/>
+<connect gate="JFET-P-" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SC-70-GDS" package="SC-70">
+<connects>
+<connect gate="JFET-P-" pin="D" pad="2"/>
+<connect gate="JFET-P-" pin="G" pad="1"/>
+<connect gate="JFET-P-" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MOS-N-" prefix="FET" uservalue="yes">
+<description>&lt;b&gt;FIELD EFFECT TRANSISTOR&lt;/B&gt;&lt;P&gt;
+(Unipolar transistor)&lt;p&gt;
+MOS FET (Enhancement)&lt;p&gt;
+N channel type&lt;P&gt;
+Japanese symbol&lt;p&gt;</description>
+<gates>
+<gate name="MOS-N-" symbol="N-MOS-E" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SC-59-GDS" package="SC-59">
+<connects>
+<connect gate="MOS-N-" pin="D" pad="2"/>
+<connect gate="MOS-N-" pin="G" pad="1"/>
+<connect gate="MOS-N-" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SC-70-GDS" package="SC-70">
+<connects>
+<connect gate="MOS-N-" pin="D" pad="2"/>
+<connect gate="MOS-N-" pin="G" pad="1"/>
+<connect gate="MOS-N-" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SC-62-GDS" package="SC-62">
+<connects>
+<connect gate="MOS-N-" pin="D" pad="2"/>
+<connect gate="MOS-N-" pin="G" pad="1"/>
+<connect gate="MOS-N-" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TO-220-GDS" package="TO-220">
+<connects>
+<connect gate="MOS-N-" pin="D" pad="2"/>
+<connect gate="MOS-N-" pin="G" pad="1"/>
+<connect gate="MOS-N-" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TO-3-GDS" package="TO-3">
+<connects>
+<connect gate="MOS-N-" pin="D" pad="2"/>
+<connect gate="MOS-N-" pin="G" pad="1"/>
+<connect gate="MOS-N-" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TO-3P-GDS" package="TO-3P">
+<connects>
+<connect gate="MOS-N-" pin="D" pad="2"/>
+<connect gate="MOS-N-" pin="G" pad="1"/>
+<connect gate="MOS-N-" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TO-92-SDG" package="TO-92">
+<connects>
+<connect gate="MOS-N-" pin="D" pad="2"/>
+<connect gate="MOS-N-" pin="G" pad="3"/>
+<connect gate="MOS-N-" pin="S" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TO-92L-SDG" package="TO-92L">
+<connects>
+<connect gate="MOS-N-" pin="D" pad="2"/>
+<connect gate="MOS-N-" pin="G" pad="3"/>
+<connect gate="MOS-N-" pin="S" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MOS-P-" prefix="FET" uservalue="yes">
+<description>&lt;b&gt;FIELD EFFECT TRANSISTOR&lt;/B&gt;&lt;P&gt;
+(Unipolar transistor)&lt;p&gt;
+MOS FET (Enhancement)&lt;p&gt;
+P channel type&lt;P&gt;
+Japanese symbol&lt;p&gt;</description>
+<gates>
+<gate name="MOS-P-" symbol="P-MOS-E" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SC-59-GDS" package="SC-59">
+<connects>
+<connect gate="MOS-P-" pin="D" pad="2"/>
+<connect gate="MOS-P-" pin="G" pad="1"/>
+<connect gate="MOS-P-" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SC-70-GDS" package="SC-70">
+<connects>
+<connect gate="MOS-P-" pin="D" pad="2"/>
+<connect gate="MOS-P-" pin="G" pad="1"/>
+<connect gate="MOS-P-" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SC-62-GDS" package="SC-62">
+<connects>
+<connect gate="MOS-P-" pin="D" pad="2"/>
+<connect gate="MOS-P-" pin="G" pad="1"/>
+<connect gate="MOS-P-" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TO-220-GDS" package="TO-220">
+<connects>
+<connect gate="MOS-P-" pin="D" pad="2"/>
+<connect gate="MOS-P-" pin="G" pad="1"/>
+<connect gate="MOS-P-" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TO-3-GDS" package="TO-3">
+<connects>
+<connect gate="MOS-P-" pin="D" pad="2"/>
+<connect gate="MOS-P-" pin="G" pad="1"/>
+<connect gate="MOS-P-" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TO-3P-GDS" package="TO-3P">
+<connects>
+<connect gate="MOS-P-" pin="D" pad="2"/>
+<connect gate="MOS-P-" pin="G" pad="1"/>
+<connect gate="MOS-P-" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TO-92-SDG" package="TO-92">
+<connects>
+<connect gate="MOS-P-" pin="D" pad="2"/>
+<connect gate="MOS-P-" pin="G" pad="3"/>
+<connect gate="MOS-P-" pin="S" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TO-92L-SDG" package="TO-92L">
+<connects>
+<connect gate="MOS-P-" pin="D" pad="2"/>
+<connect gate="MOS-P-" pin="G" pad="3"/>
+<connect gate="MOS-P-" pin="S" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AH9246-W7" prefix="HALL">
+<description>Hall effect switch, surface mount, part number AH9246-W-7</description>
+<gates>
+<gate name="HALL1" symbol="AH9246" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SC-59">
+<connects>
+<connect gate="HALL1" pin="GND" pad="3"/>
+<connect gate="HALL1" pin="OUTPUT" pad="2"/>
+<connect gate="HALL1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>
