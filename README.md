@@ -44,4 +44,6 @@ Rev 0.4:
 3) Add registration hole for battery holder
 4) Minor re-routing of vias under chips
 
+# Licence & Contact
+
 Siguino Hardware and Software licenced under GPLv3, any questions or issues please contact scott@dock.ie
