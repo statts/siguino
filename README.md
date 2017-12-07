@@ -1,4 +1,7 @@
-# siguino
+# Siguino
+
+![alt text](https://siguino.com/wp-content/uploads/2017/10/proto5-1024x768.jpg "Siguino final design")
+
 Low power board based on Arduino Pro Mini with in-built Sigfox network support
 
 Eagle schematics, libraries and Arduino code created by Scott Tattersall
