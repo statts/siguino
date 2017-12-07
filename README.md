@@ -32,13 +32,9 @@ Rev 0.2:
 1) Add Reset Pin out as well as dtr for bootloading
 2) Change C8 10uf format to standard 0603
 3) Update routing to account for unsaved work
-4) Change routing to remove vias from under LIS3DH chip
-5) Email CircuitSpecialists about Heat gun powering down
-6) Find surface mount photo resistor
-7) Investigate mag switch multi-trips
-8) Re-write/tidy arduino sketch
-9) Add de-coupling caps 10uf, 100nf to Accel chip VDD
-10) Connect INT1 pin on Accel to D3
+4) Re-write/tidy arduino sketch
+5) Add de-coupling caps 10uf, 100nf to Accel chip VDD
+6) Connect INT1 pin on Accel to D3
 
 Rev 0.3:
 1) Add Battery Holder
