@@ -3,11 +3,13 @@ Low power board based on Arduino Pro Mini with in-built Sigfox network support
 
 Eagle schematics, libraries and Arduino code created by Scott Tattersall
 
+Further project info at https://siguino.com
+
 3rd Party libraries / resources used:
 Hardware:
 - Many basic components (resistors, capacitors, etc) are from the SparkFun Eagle libraries
 - LIS3DH accelerometer from SparkFun: https://github.com/sparkfun/SparkFun_LIS3DH_Arduino_Library
-- Wisol Chip from hellogitty/WiSol (greatech.de)
+- Wisol Chip from hellogitty/WiSol (greatech.de) https://github.com/hellogitty/WiSOL
 Software:
 - LowPower library from RocketScream: https://github.com/rocketscream/Low-Power
 
