@@ -17,6 +17,8 @@ Hardware:
 
 Software:
 - LowPower library from RocketScream: https://github.com/rocketscream/Low-Power
+- SparkFun LIS3DH library (https://github.com/PaulStoffregen/AltSoftSerial)
+- Bosch BME280 library (https://github.com/PaulStoffregen/AltSoftSerial)
 
 # Eagle libraries
 In eagle, set the directories for libraries to add the libary files included here if not already included, e.g.
@@ -46,6 +48,11 @@ Rev 0.4:
 2) Re-route temperature chip
 3) Add registration hole for battery holder
 4) Minor re-routing of vias under chips
+
+Rev 0.5 / 1.0:
+1) Added Magnetometer
+2) Replaced temp chip with Temp & Pressure (Bosch BME 280)
+3) Re-routing for manufacturing
 
 # Licence & Contact
 

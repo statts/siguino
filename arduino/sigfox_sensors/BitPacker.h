@@ -1,8 +1,6 @@
 #ifndef BITPACKER_H_INCLUDED
 #define BITPACKER_H_INCLUDED
 
-#include <stdint.h>
-
 #define BIT(n)                  ( 1UL<<(n) ) //UL = unsigned long, forces chip to use 32bit int not 16
 
 #define BIT_SET(y, mask)        ( y |=  (mask) )
