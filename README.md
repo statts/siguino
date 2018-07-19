@@ -16,9 +16,15 @@ Hardware:
 - Wisol Chip from hellogitty/WiSol (greatech.de) https://github.com/hellogitty/WiSOL
 
 Software:
+ (To install, go to url and "download zip", in Arduino IDE click Sketch->Include Library->Add zip and select downloaded zip file)
 - LowPower library from RocketScream: https://github.com/rocketscream/Low-Power
-- SparkFun LIS3DH library (https://github.com/PaulStoffregen/AltSoftSerial)
-- Bosch BME280 library (https://github.com/PaulStoffregen/AltSoftSerial)
+- SparkFun LIS3DH library (https://github.com/sparkfun/SparkFun_LIS3DH_Arduino_Library)
+- Arduino Sensors library (https://github.com/adafruit/Adafruit_Sensor)
+- Arduino Bosch BME280 library (https://github.com/adafruit/Adafruit_BME280_Library)
+- AltSoftSerial (https://github.com/PaulStoffregen/AltSoftSerial)
+
+Getting started with Siguino guide (Sigfox and Wia):
+https://siguino.com/getting-started-with-siguino-and-wia-io/
 
 # Eagle libraries
 In eagle, set the directories for libraries to add the libary files included here if not already included, e.g.
