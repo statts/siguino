@@ -37,6 +37,11 @@ bool mag_opened = false;
 unsigned int seq_num = 0;
 enum POWER_MODE {OFF = 0, ON = 1};
 int init_vcc = 0;
+  int total_light = 0;
+  float total_temp = 0;
+  float total_pressure = 0;
+  float total_humidity = 0;
+  float total_altitude = 0;
 
 void setup(){
   pinMode(LED_PIN, OUTPUT);
@@ -220,11 +225,7 @@ void print_sensor_data(unsigned int vals[]){
 void loop(){  
  
 
-  int total_light = 0;
-  float total_temp = 0;
-  float total_pressure = 0;
-  float total_humidity = 0;
-  float total_altitude = 0;
+
   float f = 0;
   unsigned int ui = 0;
 
@@ -241,9 +242,11 @@ void loop(){
   if (DEBUG_MODE){
     delay(100); 
   }
+  // go to lowest power for maximum period (8 seconds)
   LowPower.powerDown(SLEEP_8S, ADC_OFF, BOD_OFF); 
   
   if (period_count % SENSOR_READ_PERIOD == 0){
+    //SENSOR_READ_PERIOD determines how often to read sensor data
     // get temp
     Util::debug_print("Getting sensor information...");    
     f = get_temperature_reading();
@@ -274,6 +277,7 @@ void loop(){
   }
   
   if (period_count>=SIGFOX_WAIT_PERIODS){
+    //only send data over sigfox every SIGFOX_WAIT_PERIODS (e.g. 8 = 8x8 seconds, ~ every minute)
     Util::debug_print(F("Sending period has occurred..."));
     Util::debug_print(F("Set sigfox wake up..."));
     unsigned int vals[] = {0,0,0,0,0,0,0,0,0};
