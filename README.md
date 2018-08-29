@@ -26,6 +26,17 @@ Software:
 Getting started with Siguino guide (Sigfox and Wia):
 https://siguino.com/getting-started-with-siguino-and-wia-io/
 
+# Sample projects
+Along with the sigfox_sensors project that sends all sensor information here is another simple example project:
+
+- Weather Station (arduino/weather_station)
+Follow the same above software section to install the approriate libraries first, then download the weather station code.
+The code can be flashed onto the Siguino via a standard FTDI breakout board (3.3v version only!), e.g. 
+https://www.sparkfun.com/products/9873
+
+The code: A simple weather station that sends avg temperature, light level, humidity and atmospheric pressure. If using Wia to process the data (see above getting started link), these can be easily graphed in Wia using a Wia Widget:
+https://developers.wia.io/docs/add-a-widget
+
 # Eagle libraries
 In eagle, set the directories for libraries to add the libary files included here if not already included, e.g.
 $EAGLEDIR/lbr:{PROJECT-DIR}/Libraries/SparkFun-Eagle-Libraries-master:{PROJECT-DIR}/Libraries/WiSOL-master/Eagle_Library
