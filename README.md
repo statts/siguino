@@ -38,6 +38,7 @@ The code: A simple weather station that sends avg temperature, light level, humi
 https://developers.wia.io/docs/add-a-widget
 
 Example:
+
 ![alt text](https://siguino.com/wp-content/uploads/2018/08/temperature_chart.png "Sample Temperature Chart (Wia)")
 
 # Eagle libraries
