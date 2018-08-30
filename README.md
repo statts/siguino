@@ -26,6 +26,8 @@ Software:
 Getting started with Siguino guide (Sigfox and Wia):
 https://siguino.com/getting-started-with-siguino-and-wia-io/
 
+![alt text](https://siguino.com/wp-content/uploads/2018/08/temperature_chart.png "Sample Temperature Chart (Wia)")
+
 # Sample projects
 Along with the sigfox_sensors project that sends all sensor information here is another simple example project:
 
