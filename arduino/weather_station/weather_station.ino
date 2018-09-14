@@ -26,6 +26,8 @@ float total_pressure = 0;
 float total_humidity = 0;
 float total_altitude = 0;
 
+int sigfox_region = 1;
+
 // number of bits to use for each piece of data: {seq_num, rounded_temp, avg_light, check_shock_occurred(), check_mag_occurred(), batt_lvl,rounded_pressure,rounded_hum,rounded_alt}
 unsigned int bit_pack_format[] = {8,7,10,1,1,4,8,7,9};
 
@@ -57,6 +59,15 @@ void setup(){
 
   //sigfox comms test for debug purposes
   bool sigfox_ok = SigFox::test_sigfox_chip();
+
+  String chip_region = SigFox::send_at_command("AT$IF?", 50);
+  Serial.println(chip_region);
+  chip_region.trim();
+  
+  if (chip_region=="902200000"){
+    Serial.println("Setting region 2");
+    sigfox_region = 2;
+  }
   
   init_vcc = Util::readVcc();  
   Util::debug_print("Vcc = ", init_vcc, true);
@@ -125,9 +136,16 @@ void send_data_packet(struct SigfoxDataPacket *packet){
 
     if (SEND_SIGFOX_MESSAGES){
       Util::debug_print(F("Sending data over SigFox::.."));
-    
+
+      if (sigfox_region==2){
+        // FCC rules means frequency macro channel switching which we don't want so reset chip prior to send
+        // Cannot send messages with < 20s gap under FCC rules, which we won't be doing anyway with Sigfox
+        String reset_response = SigFox::send_at_command("AT$RC", 50);  
+        Serial.println(reset_response);
+      }
+
       digitalWrite(LED_PIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-      
+
       String chip_response = SigFox::send_at_command("AT$SF=" + hex_bits, 6000);
       Util::debug_print("Reponse from sigfox module: " + chip_response);
   
