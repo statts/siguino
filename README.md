@@ -37,6 +37,10 @@ https://www.sparkfun.com/products/9873
 The code: A simple weather station that sends avg temperature, light level, humidity and atmospheric pressure. If using Wia to process the data (see above getting started link), these can be easily graphed in Wia using a Wia Widget:
 https://developers.wia.io/docs/add-a-widget
 
+Example:
+
+![alt text](https://siguino.com/wp-content/uploads/2018/08/temperature_chart.png "Sample Temperature Chart (Wia)")
+
 # Eagle libraries
 In eagle, set the directories for libraries to add the libary files included here if not already included, e.g.
 $EAGLEDIR/lbr:{PROJECT-DIR}/Libraries/SparkFun-Eagle-Libraries-master:{PROJECT-DIR}/Libraries/WiSOL-master/Eagle_Library
