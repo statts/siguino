@@ -4,9 +4,11 @@
 
 Low power board based on Arduino Pro Mini with in-built Sigfox network support
 
-Eagle schematics, libraries and Arduino code created by Scott Tattersall
+Siguino Eagle schematics, libraries and Arduino code created by Scott Tattersall
 
-Further project info at https://siguino.com
+Further project info and manufactured boards for purchase at https://siguino.com
+
+Detailed Getting Started Guide: https://siguino.com/step-by-step-guide/
 
 3rd Party libraries / resources used:
 
