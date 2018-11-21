@@ -25,7 +25,7 @@ Software:
 - Arduino Bosch BME280 library (https://github.com/adafruit/Adafruit_BME280_Library)
 - AltSoftSerial (https://github.com/PaulStoffregen/AltSoftSerial)
 
-Getting started with Siguino guide (Sigfox and Wia):
+More information on integrating with Wia:
 https://siguino.com/getting-started-with-siguino-and-wia-io/
 
 # Sample projects
@@ -76,6 +76,10 @@ Rev 0.5 / 1.0:
 1) Added Magnetometer
 2) Replaced temp chip with Temp & Pressure (Bosch BME 280)
 3) Re-routing for manufacturing
+
+Rev 1.1:
+1) Improved Schematic (with thanks to Marnix Janse)
+2) Improved Antenna trace (with thanks to Marnix Janse)
 
 # Licence & Contact
 
