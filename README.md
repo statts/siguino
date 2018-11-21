@@ -25,6 +25,11 @@ Software:
 - Arduino Bosch BME280 library (https://github.com/adafruit/Adafruit_BME280_Library)
 - AltSoftSerial (https://github.com/PaulStoffregen/AltSoftSerial)
 
+Enclosure:
+- CAD (STL) files for sample enclosure that can be 3d printed as needed
+![alt text](https://github.com/statts/siguino/tree/master/enclosure/image1.png "Siguino enclosure side view")
+![alt text](https://github.com/statts/siguino/tree/master/enclosure/image2.png "Siguino enclosure inside")
+
 More information on integrating with Wia:
 https://siguino.com/getting-started-with-siguino-and-wia-io/
 
