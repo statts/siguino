@@ -30,8 +30,6 @@ Enclosure:
 ![alt text](https://github.com/statts/siguino/raw/master/enclosure/image1.png "Siguino enclosure side view")
 ![alt text](https://github.com/statts/siguino/raw/master/enclosure/image2.png "Siguino enclosure inside")
 
-More information on integrating with Wia:
-https://siguino.com/getting-started-with-siguino-and-wia-io/
 
 # Sample projects
 Along with the sigfox_sensors project that sends all sensor information here is another simple example project:
@@ -43,6 +41,10 @@ https://www.sparkfun.com/products/9873
 
 The code: A simple weather station that sends avg temperature, light level, humidity and atmospheric pressure. If using Wia to process the data (see above getting started link), these can be easily graphed in Wia using a Wia Widget:
 https://developers.wia.io/docs/add-a-widget
+
+More information on integrating with Wia:
+https://siguino.com/getting-started-with-siguino-and-wia-io/
+
 
 Example:
 
