@@ -51,7 +51,7 @@ namespace SigFox {
     bool all_ok = true;
     Serial.println(F("Sigfox Comms Test\n\n"));
     altSerial.begin(9600);
-    delay(300);//Let system settle
+    delay(500);//Let system settle
     
     Serial.println(F("Check awake with AT Command..."));
     String chip_response = send_at_command("AT", 50);  

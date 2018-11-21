@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="8.2.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
-<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -6616,30 +6615,43 @@ Sensor</text>
 <errors>
 <approved hash="102,1,256.54,96.52,VDD_IO,VCC,,,,"/>
 <approved hash="104,1,96.44,167.736,HALL1,VCC,HALL_POWER,,,"/>
+<approved hash="202,1,144.78,109.22,U2,DRDY,,,,"/>
 <approved hash="104,1,175.26,114.3,U2,VDD,VCC,,,"/>
 <approved hash="104,1,175.26,111.76,U2,VDD_IO,VCC,,,"/>
 <approved hash="105,1,0,166.37,N$8,,,,,"/>
-<approved hash="108,1,78.74,198.12,N$8,,,,,"/>
-<approved hash="108,1,48.26,134.62,N$8,,,,,"/>
-<approved hash="108,1,190.5,81.28,N$8,,,,,"/>
-<approved hash="108,1,0,55.88,N$8,,,,,"/>
-<approved hash="108,1,0,99.06,N$8,,,,,"/>
-<approved hash="108,1,20.32,198.12,N$8,,,,,"/>
-<approved hash="108,1,20.32,134.62,N$8,,,,,"/>
-<approved hash="108,1,121.92,134.62,N$8,,,,,"/>
+<approved hash="208,1,48.26,60.96,VCC,sup,,,,"/>
+<approved hash="208,1,172.72,58.42,VCC,sup,,,,"/>
+<approved hash="208,1,266.7,99.06,VCC,sup,,,,"/>
+<approved hash="208,1,256.54,96.52,VCC,sup,,,,"/>
+<approved hash="208,1,116.84,121.92,VCC,sup,,,,"/>
+<approved hash="208,1,279.4,81.28,VCC,sup,,,,"/>
+<approved hash="208,1,53.34,121.92,VCC,sup,,,,"/>
+<approved hash="208,1,60.96,165.1,VCC,sup,,,,"/>
+<approved hash="208,1,73.66,165.1,VCC,sup,,,,"/>
+<approved hash="208,1,175.26,104.14,VCC,out,,,,"/>
+<approved hash="208,1,157.48,121.92,VCC,sup,,,,"/>
+<approved hash="208,1,180.34,175.26,VCC,sup,,,,"/>
 <approved hash="108,1,66.04,134.62,N$8,,,,,"/>
-<approved hash="108,1,0,134.62,N$8,,,,,"/>
-<approved hash="108,1,190.5,198.12,N$8,,,,,"/>
-<approved hash="108,1,27.94,0,N$8,,,,,"/>
-<approved hash="108,1,27.94,81.28,N$8,,,,,"/>
-<approved hash="108,1,121.92,198.12,N$8,,,,,"/>
+<approved hash="108,1,190.5,134.62,N$8,,,,,"/>
+<approved hash="108,1,190.5,81.28,N$8,,,,,"/>
+<approved hash="108,1,121.92,134.62,N$8,,,,,"/>
 <approved hash="108,1,48.26,198.12,N$8,,,,,"/>
+<approved hash="108,1,27.94,0,N$8,,,,,"/>
 <approved hash="108,1,121.92,81.28,N$8,,,,,"/>
+<approved hash="108,1,78.74,198.12,N$8,,,,,"/>
+<approved hash="108,1,0,134.62,N$8,,,,,"/>
+<approved hash="108,1,0,99.06,N$8,,,,,"/>
+<approved hash="108,1,48.26,134.62,N$8,,,,,"/>
+<approved hash="108,1,0,55.88,N$8,,,,,"/>
+<approved hash="108,1,20.32,198.12,N$8,,,,,"/>
+<approved hash="108,1,121.92,198.12,N$8,,,,,"/>
+<approved hash="108,1,20.32,134.62,N$8,,,,,"/>
+<approved hash="108,1,27.94,81.28,N$8,,,,,"/>
 <approved hash="108,1,78.74,134.62,N$8,,,,,"/>
 <approved hash="108,1,27.94,134.62,N$8,,,,,"/>
-<approved hash="108,1,190.5,134.62,N$8,,,,,"/>
+<approved hash="108,1,190.5,198.12,N$8,,,,,"/>
 <approved hash="113,1,12.0227,76.2677,J2,,,,,"/>
-<approved hash="113,1,228.6,98.8162,SFM1,,,,,"/>
+<approved hash="113,1,228.6,98.7213,SFM1,,,,,"/>
 <approved hash="113,1,12.0227,44.5177,J3,,,,,"/>
 </errors>
 </schematic>
