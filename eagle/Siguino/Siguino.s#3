@@ -5825,7 +5825,7 @@ FT232RL
 <part name="GND2" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND4" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND5" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="J1" library="SparkFun-Connectors" deviceset="6_PIN_SERIAL_TARGET" device="" value="FTDI Basic"/>
+<part name="J1" library="SparkFun-Connectors" deviceset="6_PIN_SERIAL_TARGET" device="" value="FTDI"/>
 <part name="J2" library="SparkFun-Connectors" deviceset="CONN_12" device=""/>
 <part name="C2" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-5%" value="0.1uF"/>
 <part name="Y1" library="SparkFun-Clocks" deviceset="RESONATOR-8MHZ" device="SMD_3.2X1.3" value="8MHz"/>

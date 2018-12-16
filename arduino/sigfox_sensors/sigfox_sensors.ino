@@ -120,6 +120,7 @@ void setup(){
 }//end "setup()"
 
 void interrupt_shock() {
+  Util::debug_print("Shock interrupt...");
   if (interrupt_listen_shock){
     shock_state = !shock_state;
     interrupt_listen_shock=false;
@@ -344,12 +345,12 @@ void loop(){
     if (SEND_SIGFOX_MESSAGES){
       Util::debug_print(F("Sending temperature over SigFox::.."));
     
-      //digitalWrite(LED_PIN, HIGH);   // turn the LED on (HIGH is the voltage level)
+      digitalWrite(LED_PIN, HIGH);   // turn the LED on (HIGH is the voltage level)
       
       String chip_response = SigFox::send_at_command("AT$SF=" + hex_bits, 6000);
       Util::debug_print("Reponse from sigfox module: " + chip_response);
   
-      //digitalWrite(LED_PIN, LOW);    // turn the LED off by making the voltage LOW
+      digitalWrite(LED_PIN, LOW);    // turn the LED off by making the voltage LOW
       
     }else{
       Util::debug_print(F("Skipping Sigfox message sending..."));
