@@ -163,18 +163,18 @@
 </layers>
 <board>
 <plain>
-<text x="38.38" y="34.03" size="1.27" layer="21">Siguino, Rev: 1.0</text>
+<text x="38.38" y="34.03" size="1.27" layer="21">Siguino, Rev: 2.0</text>
 <wire x1="0" y1="0" x2="71" y2="0" width="0.1524" layer="20"/>
 <wire x1="71" y1="0" x2="71" y2="39" width="0.1524" layer="20"/>
 <wire x1="71" y1="39" x2="0" y2="39" width="0.1524" layer="20"/>
 <wire x1="0" y1="39" x2="0" y2="0" width="0.1524" layer="20"/>
 <hole x="41.58" y="8.93" drill="3"/>
-<text x="27.1" y="0.5" size="0.5" layer="21">CTS</text>
-<text x="24.7" y="0.5" size="0.5" layer="21">GND</text>
-<text x="29.7" y="0.5" size="0.5" layer="21">VCC</text>
-<text x="32.4" y="0.5" size="0.5" layer="21">RXI</text>
-<text x="34.8" y="0.5" size="0.5" layer="21">TXO</text>
-<text x="37.3" y="0.5" size="0.5" layer="21">DTR</text>
+<text x="27.1" y="0.2" size="0.5" layer="21">CTS</text>
+<text x="24.6" y="0.2" size="0.5" layer="21">GND</text>
+<text x="29.7" y="0.2" size="0.5" layer="21">VCC</text>
+<text x="32.4" y="0.2" size="0.5" layer="21">RXI</text>
+<text x="34.8" y="0.2" size="0.5" layer="21">TXO</text>
+<text x="37.3" y="0.2" size="0.5" layer="21">DTR</text>
 <text x="0.6" y="36.9" size="0.5" layer="21" rot="R90">VCC</text>
 <text x="0.6" y="34.2" size="0.5" layer="21" rot="R90">GND</text>
 <text x="0.6" y="32" size="0.5" layer="21" rot="R90">A1</text>
@@ -1877,9 +1877,9 @@ Your Multi-CB Team
 <attribute name="PROD_ID" value="DIO-00819" x="22.75" y="16.46" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="22.75" y="15.825" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="J1" library="SparkFun-Connectors" package="1X06" value="FTDI" x="38.1" y="2.4" smashed="yes" rot="R180">
-<attribute name="NAME" x="23.87" y="2.703" size="0.6096" layer="25" font="vector" ratio="20" rot="R180"/>
-<attribute name="VALUE" x="23.77" y="1.732" size="0.6096" layer="27" font="vector" ratio="20" rot="R180"/>
+<element name="J1" library="SparkFun-Connectors" package="1X06" value="FTDI" x="38" y="2.1" smashed="yes" rot="R180">
+<attribute name="NAME" x="23.77" y="2.403" size="0.6096" layer="25" font="vector" ratio="20" rot="R180"/>
+<attribute name="VALUE" x="23.67" y="1.432" size="0.6096" layer="27" font="vector" ratio="20" rot="R180"/>
 </element>
 <element name="J2" library="SparkFun-Connectors" package="1X12" value="" x="1.93" y="9.67" smashed="yes" rot="R90">
 <attribute name="NAME" x="3.533" y="10.5" size="0.6096" layer="25" font="vector" ratio="20" rot="R90"/>
@@ -2206,7 +2206,7 @@ Your Multi-CB Team
 <wire x1="23.23" y1="7.87" x2="23.74" y2="8.88" width="0" layer="19" extent="1-1"/>
 <wire x1="22.73" y1="7.87" x2="23.23" y2="7.87" width="0" layer="19" extent="1-1"/>
 <wire x1="25.33" y1="4.67" x2="23.23" y2="7.87" width="0" layer="19" extent="1-1"/>
-<wire x1="30.48" y1="2.4" x2="25.33" y2="4.67" width="0" layer="19" extent="1-1"/>
+<wire x1="30.38" y1="2.1" x2="25.33" y2="4.67" width="0" layer="19" extent="1-1"/>
 <wire x1="25.16614375" y1="23.786796875" x2="33.345" y2="30.045" width="0" layer="19" extent="1-1"/>
 <wire x1="26.297515625" y1="24.91816875" x2="25.16614375" y2="23.786796875" width="0" layer="19" extent="1-1"/>
 <wire x1="25.06895625" y1="26.27895625" x2="26.297515625" y2="24.91816875" width="0" layer="19" extent="1-1"/>
@@ -2232,21 +2232,21 @@ Your Multi-CB Team
 <contactref element="U1" pad="30"/>
 <contactref element="U5" pad="5"/>
 <wire x1="30.075" y1="4.744" x2="31.236796875" y2="25.483853125" width="0" layer="19" extent="1-1"/>
-<wire x1="33.02" y1="2.4" x2="30.075" y2="4.744" width="0" layer="19" extent="1-1"/>
+<wire x1="32.92" y1="2.1" x2="30.075" y2="4.744" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TXO">
 <contactref element="J1" pad="2"/>
 <contactref element="U1" pad="31"/>
 <contactref element="U5" pad="1"/>
 <wire x1="27.475" y1="4.744" x2="30.6711125" y2="26.0495375" width="0" layer="19" extent="1-1"/>
-<wire x1="35.56" y1="2.4" x2="27.475" y2="4.744" width="0" layer="19" extent="1-1"/>
+<wire x1="35.46" y1="2.1" x2="27.475" y2="4.744" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DTR">
 <contactref element="J1" pad="1"/>
 <contactref element="C1" pad="1"/>
 <contactref element="U5" pad="2"/>
 <wire x1="28.125" y1="4.744" x2="23.94895625" y2="27.41895625" width="0" layer="19" extent="1-1"/>
-<wire x1="38.1" y1="2.4" x2="28.125" y2="4.744" width="0" layer="19" extent="1-1"/>
+<wire x1="38" y1="2.1" x2="28.125" y2="4.744" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RESET">
 <contactref element="C1" pad="2"/>
@@ -2484,7 +2484,7 @@ Your Multi-CB Team
 <signal name="CTS">
 <contactref element="J1" pad="5"/>
 <contactref element="U5" pad="11"/>
-<wire x1="27.94" y1="2.4" x2="33.975" y2="4.744" width="0" layer="19" extent="1-1"/>
+<wire x1="27.84" y1="2.1" x2="33.975" y2="4.744" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="V33">
 <contactref element="U6" pad="4"/>
