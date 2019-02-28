@@ -1,7 +1,7 @@
 #ifndef BITPACKER_H_INCLUDED
 #define BITPACKER_H_INCLUDED
 
-#define BIT(n)                  ( 1UL<<(n) ) //UL = unsigned long, forces chip to use 32bit int not 16
+#define BIT(n)                  ( 1ULL<<(n) ) //UL = unsigned long, forces chip to use 32bit int not 16
 
 #define BIT_SET(y, mask)        ( y |=  (mask) )
 #define BIT_CLEAR(y, mask)      ( y &= ~(mask) )
