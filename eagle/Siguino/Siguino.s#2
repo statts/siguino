@@ -6503,7 +6503,7 @@ These vary by manufacturer, but we used the NPIS54LS footprint from here.</descr
 <part name="R5" library="SparkFun-Resistors" deviceset="100KOHM" device="-0603-1/10W-1%" value="100k"/>
 <part name="GND14" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
-<part name="ANT1" library="Siguino" deviceset="PROANT_PRO-OB-512" device="ONBOARD" value="PROOB471"/>
+<part name="ANT1" library="Siguino" deviceset="PROANT_PRO-OB-512" device="ONBOARD" value="PROOB518"/>
 <part name="R6" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
 <part name="SUPPLY8" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="GND6" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
@@ -6540,6 +6540,7 @@ These vary by manufacturer, but we used the NPIS54LS footprint from here.</descr
 <part name="U6" library="MAXIM" deviceset="MAX1724EZK33+T" device=""/>
 <part name="L1" library="SparkFun-Coils" library_urn="urn:adsk.eagle:library:512" deviceset="INDUCTOR" device="-0603-33NH" package3d_urn="urn:adsk.eagle:package:37574/1" value="10uH"/>
 <part name="C18" library="SparkFun-Capacitors" deviceset="10UF" device="-0603-6.3V-20%" value="10uF"/>
+<part name="Q2" library="SparkFun-DiscreteSemi" deviceset="MOSFET_PCH" device="SI2323DDS" value="MOSFET P-CH 20V 5.3A SOT-23"/>
 </parts>
 <sheets>
 <sheet>
@@ -6838,6 +6839,9 @@ Sensor</text>
 <attribute name="NAME" x="397.256" y="93.599" size="1.778" layer="95" font="vector" rot="R180"/>
 <attribute name="VALUE" x="397.256" y="98.679" size="1.778" layer="96" font="vector" rot="R180"/>
 </instance>
+<instance part="Q2" gate="G$1" x="358.14" y="78.74" smashed="yes" rot="R180">
+<attribute name="NAME" x="353.06" y="78.74" size="1.778" layer="95" font="vector" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -7032,7 +7036,11 @@ Sensor</text>
 <pinref part="J4" gate="G$1" pin="GND"/>
 <wire x1="330.2" y1="53.34" x2="335.28" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="GND21" gate="1" pin="GND"/>
-<wire x1="335.28" y1="53.34" x2="335.28" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="335.28" y1="53.34" x2="335.28" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="J4" gate="G$1" pin="SHIELD"/>
+<wire x1="335.28" y1="58.42" x2="335.28" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="58.42" x2="335.28" y2="58.42" width="0.1524" layer="91"/>
+<junction x="335.28" y="58.42"/>
 </segment>
 <segment>
 <pinref part="C14" gate="G$1" pin="1"/>
@@ -7063,6 +7071,10 @@ Sensor</text>
 <wire x1="373.38" y1="15.24" x2="368.3" y2="15.24" width="0.1524" layer="91"/>
 <junction x="368.3" y="15.24"/>
 <pinref part="GND22" gate="1" pin="GND"/>
+<pinref part="U5" gate="G$1" pin="TEST"/>
+<wire x1="373.38" y1="25.4" x2="368.3" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="368.3" y1="25.4" x2="368.3" y2="22.86" width="0.1524" layer="91"/>
+<junction x="368.3" y="22.86"/>
 </segment>
 <segment>
 <pinref part="U6" gate="A" pin="GND"/>
@@ -7073,6 +7085,11 @@ Sensor</text>
 <pinref part="C18" gate="G$1" pin="1"/>
 <wire x1="398.78" y1="91.44" x2="398.78" y2="88.9" width="0.1524" layer="91"/>
 <label x="398.78" y="88.9" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="Q2" gate="G$1" pin="G"/>
+<wire x1="363.22" y1="81.28" x2="368.3" y2="81.28" width="0.1524" layer="91"/>
+<label x="368.3" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -7088,11 +7105,6 @@ Sensor</text>
 <pinref part="U1" gate="U$1" pin="AVCC"/>
 <wire x1="53.34" y1="60.96" x2="48.26" y2="60.96" width="0.1524" layer="91"/>
 <junction x="48.26" y="60.96"/>
-</segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="VCC"/>
-<wire x1="15.24" y1="116.84" x2="17.78" y2="116.84" width="0.1524" layer="91"/>
-<label x="17.78" y="116.84" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="SUPPLY4" gate="G$1" pin="VCC"/>
@@ -7179,13 +7191,13 @@ Sensor</text>
 <junction x="172.72" y="167.64"/>
 </segment>
 <segment>
-<pinref part="U5" gate="G$1" pin="3V3OUT"/>
-<wire x1="373.38" y1="40.64" x2="365.76" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="C17" gate="G$1" pin="2"/>
-<wire x1="365.76" y1="40.64" x2="360.68" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="365.76" y1="38.1" x2="365.76" y2="40.64" width="0.1524" layer="91"/>
-<junction x="365.76" y="40.64"/>
-<label x="360.68" y="40.64" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U6" gate="A" pin="OUT"/>
+<wire x1="393.7" y1="106.68" x2="398.78" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="C18" gate="G$1" pin="2"/>
+<wire x1="398.78" y1="106.68" x2="398.78" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="398.78" y1="106.68" x2="408.94" y2="106.68" width="0.1524" layer="91"/>
+<junction x="398.78" y="106.68"/>
+<label x="408.94" y="106.68" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -7770,17 +7782,6 @@ Sensor</text>
 <label x="408.94" y="43.18" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="V33" class="0">
-<segment>
-<pinref part="U6" gate="A" pin="OUT"/>
-<wire x1="393.7" y1="106.68" x2="398.78" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="C18" gate="G$1" pin="2"/>
-<wire x1="398.78" y1="106.68" x2="398.78" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="398.78" y1="106.68" x2="408.94" y2="106.68" width="0.1524" layer="91"/>
-<junction x="398.78" y="106.68"/>
-<label x="408.94" y="106.68" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="N$17" class="0">
 <segment>
 <pinref part="U6" gate="A" pin="!SHDN"/>
@@ -7817,6 +7818,37 @@ Sensor</text>
 <pinref part="L1" gate="G$1" pin="1"/>
 <wire x1="358.14" y1="121.92" x2="370.84" y2="121.92" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="Q2" gate="G$1" pin="S"/>
+<wire x1="355.6" y1="83.82" x2="355.6" y2="88.9" width="0.1524" layer="91"/>
+<label x="355.6" y="88.9" size="1.27" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="VCC"/>
+<wire x1="15.24" y1="116.84" x2="17.78" y2="116.84" width="0.1524" layer="91"/>
+<label x="17.78" y="116.84" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="3V3FTDI" class="0">
+<segment>
+<pinref part="U5" gate="G$1" pin="3V3OUT"/>
+<wire x1="373.38" y1="40.64" x2="370.84" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="C17" gate="G$1" pin="2"/>
+<wire x1="370.84" y1="40.64" x2="365.76" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="365.76" y1="40.64" x2="360.68" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="365.76" y1="38.1" x2="365.76" y2="40.64" width="0.1524" layer="91"/>
+<junction x="365.76" y="40.64"/>
+<label x="360.68" y="40.64" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U5" gate="G$1" pin="VCCIO"/>
+<wire x1="373.38" y1="38.1" x2="370.84" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="370.84" y1="38.1" x2="370.84" y2="40.64" width="0.1524" layer="91"/>
+<junction x="370.84" y="40.64"/>
+</segment>
+<segment>
+<pinref part="Q2" gate="G$1" pin="D"/>
+<wire x1="355.6" y1="73.66" x2="355.6" y2="68.58" width="0.1524" layer="91"/>
+<label x="355.6" y="68.58" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
 </net>
 </nets>
 </sheet>
@@ -7824,12 +7856,30 @@ Sensor</text>
 <errors>
 <approved hash="102,1,256.54,96.52,VDD_IO,VCC,,,,"/>
 <approved hash="104,1,96.44,167.736,HALL1,VCC,HALL_POWER,,,"/>
+<approved hash="104,1,144.78,54.02,BATT1,VBATT,VBAT,,,"/>
 <approved hash="202,1,144.78,109.22,U2,DRDY,,,,"/>
 <approved hash="104,1,175.26,114.3,U2,VDD,VCC,,,"/>
 <approved hash="104,1,175.26,111.76,U2,VDD_IO,VCC,,,"/>
+<approved hash="202,1,373.38,27.94,U5,RESET,,,,"/>
+<approved hash="202,1,373.38,33.02,U5,OSCI,,,,"/>
+<approved hash="202,1,403.86,35.56,U5,DSR,,,,"/>
+<approved hash="202,1,403.86,33.02,U5,DCD,,,,"/>
+<approved hash="202,1,403.86,30.48,U5,RI,,,,"/>
+<approved hash="104,1,373.38,20.32,U5,GND7,GND,,,"/>
+<approved hash="104,1,373.38,17.78,U5,GND18,GND,,,"/>
+<approved hash="104,1,373.38,15.24,U5,GND21,GND,,,"/>
+<approved hash="204,1,373.38,38.1,U5,VCCIO,,,,"/>
+<approved hash="104,1,373.38,22.86,U5,AGND,GND,,,"/>
+<approved hash="202,1,373.38,25.4,U5,TEST,,,,"/>
+<approved hash="104,1,373.38,43.18,U5,VCC,5V,,,"/>
+<approved hash="202,1,403.86,20.32,U5,PWREN,,,,"/>
+<approved hash="202,1,403.86,17.78,U5,TXDEN,,,,"/>
+<approved hash="202,1,403.86,15.24,U5,SLEEP,,,,"/>
+<approved hash="104,1,358.14,109.22,U6,BATT,VBAT2,,,"/>
 <approved hash="105,1,0,166.37,N$8,,,,,"/>
+<approved hash="206,1,175.26,104.14,VCC,,,,,"/>
+<approved hash="206,1,393.7,106.68,VCC,,,,,"/>
 <approved hash="208,1,48.26,60.96,VCC,sup,,,,"/>
-<approved hash="208,1,172.72,58.42,VCC,sup,,,,"/>
 <approved hash="208,1,266.7,99.06,VCC,sup,,,,"/>
 <approved hash="208,1,256.54,96.52,VCC,sup,,,,"/>
 <approved hash="208,1,116.84,121.92,VCC,sup,,,,"/>
@@ -7840,27 +7890,28 @@ Sensor</text>
 <approved hash="208,1,175.26,104.14,VCC,out,,,,"/>
 <approved hash="208,1,157.48,121.92,VCC,sup,,,,"/>
 <approved hash="208,1,180.34,175.26,VCC,sup,,,,"/>
-<approved hash="108,1,66.04,134.62,N$8,,,,,"/>
-<approved hash="108,1,190.5,134.62,N$8,,,,,"/>
+<approved hash="208,1,393.7,106.68,VCC,out,,,,"/>
 <approved hash="108,1,190.5,81.28,N$8,,,,,"/>
-<approved hash="108,1,121.92,134.62,N$8,,,,,"/>
-<approved hash="108,1,48.26,198.12,N$8,,,,,"/>
-<approved hash="108,1,27.94,0,N$8,,,,,"/>
-<approved hash="108,1,121.92,81.28,N$8,,,,,"/>
+<approved hash="108,1,121.92,198.12,N$8,,,,,"/>
 <approved hash="108,1,78.74,198.12,N$8,,,,,"/>
 <approved hash="108,1,0,134.62,N$8,,,,,"/>
-<approved hash="108,1,0,99.06,N$8,,,,,"/>
-<approved hash="108,1,48.26,134.62,N$8,,,,,"/>
-<approved hash="108,1,0,55.88,N$8,,,,,"/>
-<approved hash="108,1,20.32,198.12,N$8,,,,,"/>
-<approved hash="108,1,121.92,198.12,N$8,,,,,"/>
-<approved hash="108,1,20.32,134.62,N$8,,,,,"/>
 <approved hash="108,1,27.94,81.28,N$8,,,,,"/>
+<approved hash="108,1,121.92,81.28,N$8,,,,,"/>
 <approved hash="108,1,78.74,134.62,N$8,,,,,"/>
-<approved hash="108,1,27.94,134.62,N$8,,,,,"/>
+<approved hash="108,1,20.32,198.12,N$8,,,,,"/>
+<approved hash="108,1,0,99.06,N$8,,,,,"/>
+<approved hash="108,1,48.26,198.12,N$8,,,,,"/>
+<approved hash="108,1,66.04,134.62,N$8,,,,,"/>
+<approved hash="108,1,48.26,134.62,N$8,,,,,"/>
+<approved hash="108,1,27.94,0,N$8,,,,,"/>
+<approved hash="108,1,121.92,134.62,N$8,,,,,"/>
 <approved hash="108,1,190.5,198.12,N$8,,,,,"/>
+<approved hash="108,1,20.32,134.62,N$8,,,,,"/>
+<approved hash="108,1,27.94,134.62,N$8,,,,,"/>
+<approved hash="108,1,0,55.88,N$8,,,,,"/>
+<approved hash="108,1,190.5,134.62,N$8,,,,,"/>
 <approved hash="113,1,12.0227,76.2677,J2,,,,,"/>
-<approved hash="113,1,228.6,98.7213,SFM1,,,,,"/>
+<approved hash="113,1,228.6,98.8162,SFM1,,,,,"/>
 <approved hash="113,1,12.0227,44.5177,J3,,,,,"/>
 </errors>
 </schematic>

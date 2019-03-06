@@ -1097,77 +1097,6 @@ by exp-lbrs.ulp</description>
 <text x="-1.35075" y="1.30071875" size="0.30496875" layer="25">&gt;NAME</text>
 <text x="-1.25371875" y="-1.755209375" size="0.30570625" layer="27">&gt;VALUE</text>
 </package>
-<package name="PROANT_ONBOARD_SMD_2400">
-<description>Proant SMD OnBoard Antenna for 868/2400MHz (SigFox)
-Part Number: PRO-OB-518</description>
-<wire x1="-8" y1="16" x2="8" y2="16" width="0.127" layer="51"/>
-<wire x1="8" y1="16" x2="8" y2="-16" width="0.127" layer="51"/>
-<wire x1="8" y1="-16" x2="-8" y2="-16" width="0.127" layer="51"/>
-<wire x1="-8" y1="-16" x2="-8" y2="16" width="0.127" layer="51"/>
-<wire x1="5.9" y1="17" x2="5.9" y2="-17" width="0.127" layer="21"/>
-<wire x1="5.9" y1="-17" x2="-5.9" y2="-17" width="0.127" layer="21"/>
-<wire x1="-5.9" y1="-17" x2="-5.9" y2="17" width="0.127" layer="21"/>
-<wire x1="-5.9" y1="17" x2="5.9" y2="17" width="0.127" layer="21"/>
-<smd name="GND" x="5" y="14.8" dx="2.5" dy="1.6" layer="1"/>
-<smd name="NC$1" x="-4.8" y="9.7" dx="1.95" dy="1" layer="1"/>
-<smd name="NC$2" x="5" y="3" dx="1.95" dy="1" layer="1"/>
-<smd name="NC$3" x="5" y="-13.8" dx="1.95" dy="1" layer="1"/>
-<smd name="NC$4" x="-4.8" y="-13.8" dx="1.95" dy="1" layer="1"/>
-<smd name="RF_FEED" x="5" y="9.7" dx="2.5" dy="1.6" layer="1"/>
-<text x="-2.9" y="-2.2" size="1.27" layer="27">&gt;Value</text>
-<text x="-2.9" y="-6" size="1.27" layer="25">&gt;Name</text>
-<polygon width="0.127" layer="1" pour="hatch">
-<vertex x="2.6" y="4.95"/>
-<vertex x="7.4" y="4.95"/>
-<vertex x="7.4" y="1.05"/>
-<vertex x="2.6" y="1.05"/>
-</polygon>
-<polygon width="0.127" layer="1" pour="hatch">
-<vertex x="2.6" y="-11.75"/>
-<vertex x="7.4" y="-11.75"/>
-<vertex x="7.4" y="-15.65"/>
-<vertex x="2.6" y="-15.65"/>
-</polygon>
-<polygon width="0.127" layer="1" pour="hatch">
-<vertex x="-7" y="-11.75"/>
-<vertex x="-2.2" y="-11.75"/>
-<vertex x="-2.2" y="-15.65"/>
-<vertex x="-7" y="-15.65"/>
-</polygon>
-<polygon width="0.127" layer="1" pour="hatch">
-<vertex x="-7.2" y="11.65"/>
-<vertex x="-2.4" y="11.65"/>
-<vertex x="-2.4" y="7.75"/>
-<vertex x="-7.2" y="7.75"/>
-</polygon>
-<polygon width="0.127" layer="16" pour="hatch">
-<vertex x="-7.2" y="11.6"/>
-<vertex x="-2.4" y="11.6"/>
-<vertex x="-2.4" y="7.8"/>
-<vertex x="-7.2" y="7.8"/>
-</polygon>
-<polygon width="0.127" layer="16" pour="hatch">
-<vertex x="2.6" y="4.9"/>
-<vertex x="7.4" y="4.9"/>
-<vertex x="7.4" y="1"/>
-<vertex x="2.6" y="1"/>
-<vertex x="2.6" y="1.1"/>
-</polygon>
-<polygon width="0.127" layer="16" pour="hatch">
-<vertex x="2.6" y="-11.8"/>
-<vertex x="7.4" y="-11.8"/>
-<vertex x="7.4" y="-11.9"/>
-<vertex x="7.4" y="-15.7"/>
-<vertex x="2.6" y="-15.7"/>
-</polygon>
-<polygon width="0.127" layer="16" pour="hatch">
-<vertex x="-7" y="-11.8"/>
-<vertex x="-2.2" y="-11.8"/>
-<vertex x="-2.2" y="-15.7"/>
-<vertex x="-7" y="-15.7"/>
-<vertex x="-7" y="-15.6"/>
-</polygon>
-</package>
 <package name="BME280COMPONENTLIBRARY_BME280_LGA">
 <circle x="1.74625" y="1.74625" radius="0.15875" width="0.127" layer="21"/>
 <circle x="1.74625" y="1.74625" radius="0.079375" width="0.127" layer="21"/>
@@ -1634,6 +1563,81 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package3d>
 </packages3d>
 </library>
+<library name="proant">
+<packages>
+<package name="ONBOARD_SMD_2400">
+<description>Proant SMD OnBoard Antenna for 868/2400MHz (SigFox)
+Part Number: PRO-OB-518</description>
+<smd name="NC$2" x="5" y="3" dx="1.95" dy="1" layer="1"/>
+<polygon width="0.127" layer="1" pour="cutout">
+<vertex x="2.6" y="4.95"/>
+<vertex x="7.4" y="4.95"/>
+<vertex x="7.4" y="1.05"/>
+<vertex x="2.6" y="1.05"/>
+</polygon>
+<smd name="NC$3" x="5" y="-13.8" dx="1.95" dy="1" layer="1"/>
+<smd name="NC$4" x="-4.8" y="-13.8" dx="1.95" dy="1" layer="1"/>
+<smd name="NC$1" x="-4.8" y="9.7" dx="1.95" dy="1" layer="1"/>
+<polygon width="0.127" layer="1" pour="cutout">
+<vertex x="2.6" y="-11.75"/>
+<vertex x="7.4" y="-11.75"/>
+<vertex x="7.4" y="-15.65"/>
+<vertex x="2.6" y="-15.65"/>
+</polygon>
+<polygon width="0.127" layer="1" pour="cutout">
+<vertex x="-7" y="-11.75"/>
+<vertex x="-2.2" y="-11.75"/>
+<vertex x="-2.2" y="-15.65"/>
+<vertex x="-7" y="-15.65"/>
+</polygon>
+<polygon width="0.127" layer="1" pour="cutout">
+<vertex x="-7.2" y="11.65"/>
+<vertex x="-2.4" y="11.65"/>
+<vertex x="-2.4" y="7.75"/>
+<vertex x="-7.2" y="7.75"/>
+</polygon>
+<smd name="GND" x="5" y="14.8" dx="2.5" dy="1.6" layer="1"/>
+<smd name="RF_FEED" x="5" y="9.7" dx="2.5" dy="1.6" layer="1"/>
+<wire x1="-8" y1="16" x2="8" y2="16" width="0.127" layer="51"/>
+<wire x1="8" y1="16" x2="8" y2="-19" width="0.127" layer="51"/>
+<wire x1="8" y1="-19" x2="-8" y2="-19" width="0.127" layer="51"/>
+<wire x1="-8" y1="-19" x2="-8" y2="16" width="0.127" layer="51"/>
+<wire x1="6.4" y1="15.8" x2="6.4" y2="-18.6" width="0.127" layer="21"/>
+<wire x1="6.4" y1="-18.6" x2="-6" y2="-18.6" width="0.127" layer="21"/>
+<wire x1="-6" y1="-18.6" x2="-6" y2="15.8" width="0.127" layer="21"/>
+<wire x1="-6" y1="15.8" x2="6.4" y2="15.8" width="0.127" layer="21"/>
+<text x="-2.9" y="-2.2" size="1.27" layer="27">&gt;Value</text>
+<text x="-2.9" y="-6" size="1.27" layer="25">&gt;Name</text>
+<polygon width="0.127" layer="16" pour="cutout">
+<vertex x="-7.2" y="11.6"/>
+<vertex x="-2.4" y="11.6"/>
+<vertex x="-2.4" y="7.8"/>
+<vertex x="-7.2" y="7.8"/>
+</polygon>
+<polygon width="0.127" layer="16" pour="cutout">
+<vertex x="2.6" y="4.9"/>
+<vertex x="7.4" y="4.9"/>
+<vertex x="7.4" y="1"/>
+<vertex x="2.6" y="1"/>
+<vertex x="2.6" y="1.1"/>
+</polygon>
+<polygon width="0.127" layer="16" pour="cutout">
+<vertex x="2.6" y="-11.8"/>
+<vertex x="7.4" y="-11.8"/>
+<vertex x="7.4" y="-11.9"/>
+<vertex x="7.4" y="-15.7"/>
+<vertex x="2.6" y="-15.7"/>
+</polygon>
+<polygon width="0.127" layer="16" pour="cutout">
+<vertex x="-7" y="-11.8"/>
+<vertex x="-2.2" y="-11.8"/>
+<vertex x="-2.2" y="-15.7"/>
+<vertex x="-7" y="-15.7"/>
+<vertex x="-7" y="-15.6"/>
+</polygon>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1966,7 +1970,7 @@ Your Multi-CB Team
 <attribute name="PROD_ID" value="RES-07828" x="48.8" y="16.23" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="48.8" y="15.468" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="ANT1" library="Siguino" package="PROANT_ONBOARD_SMD_2400" value="PROOB518" x="62.88" y="21.23" smashed="yes">
+<element name="ANT1" library="proant" package="ONBOARD_SMD_2400" value="PROOB518" x="62.88" y="21.23" smashed="yes">
 <attribute name="NAME" x="59.98" y="15.23" size="1.27" layer="25"/>
 <attribute name="VALUE" x="59.98" y="19.03" size="1.27" layer="27"/>
 </element>
@@ -2126,7 +2130,6 @@ Your Multi-CB Team
 <contactref element="C9" pad="1"/>
 <contactref element="C12" pad="1"/>
 <contactref element="C13" pad="2"/>
-<contactref element="ANT1" pad="GND"/>
 <contactref element="U3" pad="10"/>
 <contactref element="C15" pad="1"/>
 <contactref element="C6" pad="2"/>
@@ -2351,6 +2354,9 @@ Your Multi-CB Team
 <wire x1="34.3664" y1="31.3664" x2="35.3" y2="32.3" width="0.1524" layer="1"/>
 <via x="5.6" y="35.3" extent="1-16" drill="0.2"/>
 <via x="4.1" y="28.8" extent="1-16" drill="0.2"/>
+<contactref element="U5" pad="26"/>
+<contactref element="U5" pad="11"/>
+<contactref element="ANT1" pad="GND"/>
 </signal>
 <signal name="VCC">
 <contactref element="U1" pad="6"/>
@@ -2541,27 +2547,28 @@ Your Multi-CB Team
 <signal name="RXI">
 <contactref element="J1" pad="3"/>
 <contactref element="U1" pad="30"/>
-<contactref element="U5" pad="5"/>
-<wire x1="29.875" y1="4.744" x2="29.875" y2="3.295" width="0.1524" layer="1"/>
-<wire x1="29.875" y1="3.295" x2="28.78" y2="2.2" width="0.1524" layer="1"/>
 <wire x1="31.236796875" y1="25.483853125" x2="31.8" y2="26.04705625" width="0.1524" layer="1"/>
 <wire x1="31.8" y1="26.04705625" x2="31.8" y2="26.5" width="0.1524" layer="1"/>
 <via x="31.8" y="26.5" extent="1-16" drill="0.2"/>
 <wire x1="31.8" y1="26.5" x2="44.8" y2="26.5" width="0.1524" layer="16"/>
 <wire x1="44.8" y1="26.5" x2="44.9" y2="26.4" width="0.1524" layer="16"/>
 <wire x1="44.9" y1="26.4" x2="44.9" y2="10.8" width="0.1524" layer="16"/>
-<wire x1="44.9" y1="10.8" x2="29.8" y2="10.8" width="0.1524" layer="16"/>
-<wire x1="29.8" y1="10.8" x2="29.8" y2="7.9" width="0.1524" layer="16"/>
-<via x="29.8" y="7.9" extent="1-16" drill="0.2"/>
-<wire x1="29.8" y1="7.9" x2="29.875" y2="7.825" width="0.1524" layer="1"/>
-<wire x1="29.875" y1="7.825" x2="29.875" y2="4.744" width="0.1524" layer="1"/>
+<wire x1="44.9" y1="10.8" x2="28.8" y2="10.8" width="0.1524" layer="16"/>
+<wire x1="28.8" y1="10.8" x2="28.8" y2="7.9" width="0.1524" layer="16"/>
+<via x="28.8" y="7.9" extent="1-16" drill="0.2"/>
+<contactref element="U5" pad="1"/>
+<wire x1="27.275" y1="4.744" x2="27.275" y2="6.375" width="0.1524" layer="1"/>
+<wire x1="27.275" y1="6.375" x2="28.8" y2="7.9" width="0.1524" layer="1"/>
+<wire x1="26.71261875" y1="1.059" x2="25.76738125" y2="1.059" width="0.1524" layer="16"/>
+<wire x1="25.76738125" y1="1.059" x2="25.099" y2="1.72738125" width="0.1524" layer="16"/>
+<wire x1="25.099" y1="1.72738125" x2="25.099" y2="4.199" width="0.1524" layer="16"/>
+<wire x1="28.78" y1="2.2" x2="27.85361875" y2="2.2" width="0.1524" layer="16"/>
+<wire x1="27.85361875" y1="2.2" x2="26.71261875" y2="1.059" width="0.1524" layer="16"/>
+<wire x1="25.099" y1="4.199" x2="28.8" y2="7.9" width="0.1524" layer="16"/>
 </signal>
 <signal name="TXO">
 <contactref element="J1" pad="2"/>
 <contactref element="U1" pad="31"/>
-<contactref element="U5" pad="1"/>
-<wire x1="27.275" y1="4.744" x2="27.275" y2="3.235" width="0.1524" layer="1"/>
-<wire x1="27.275" y1="3.235" x2="26.24" y2="2.2" width="0.1524" layer="1"/>
 <via x="31.4" y="28.4" extent="1-16" drill="0.2"/>
 <wire x1="30.6711125" y1="26.0495375" x2="30.6711125" y2="26.501240625" width="0.1524" layer="1"/>
 <wire x1="30.6711125" y1="26.501240625" x2="30.953203125" y2="26.78333125" width="0.1524" layer="1"/>
@@ -2570,10 +2577,15 @@ Your Multi-CB Team
 <wire x1="31.4" y1="28.4" x2="45.2" y2="28.4" width="0.1524" layer="16"/>
 <wire x1="45.2" y1="28.4" x2="45.3" y2="28.3" width="0.1524" layer="16"/>
 <wire x1="45.3" y1="28.3" x2="45.3" y2="7.1" width="0.1524" layer="16"/>
-<via x="27.3" y="7.1" extent="1-16" drill="0.2"/>
-<wire x1="27.3" y1="7.1" x2="27.3" y2="4.769" width="0.1524" layer="1"/>
-<wire x1="27.3" y1="4.769" x2="27.275" y2="4.744" width="0.1524" layer="1"/>
-<wire x1="45.3" y1="7.1" x2="27.3" y2="7.1" width="0.1524" layer="16"/>
+<via x="29.9" y="7.1" extent="1-16" drill="0.2"/>
+<wire x1="45.3" y1="7.1" x2="29.9" y2="7.1" width="0.1524" layer="16"/>
+<contactref element="U5" pad="5"/>
+<wire x1="29.875" y1="4.744" x2="29.875" y2="7.075" width="0.1524" layer="1"/>
+<wire x1="29.875" y1="7.075" x2="29.9" y2="7.1" width="0.1524" layer="1"/>
+<wire x1="26.24" y1="2.2" x2="28.6" y2="4.56" width="0.1524" layer="16"/>
+<wire x1="28.6" y1="6.50274375" x2="29.19725625" y2="7.1" width="0.1524" layer="16"/>
+<wire x1="28.6" y1="4.56" x2="28.6" y2="6.50274375" width="0.1524" layer="16"/>
+<wire x1="29.19725625" y1="7.1" x2="29.9" y2="7.1" width="0.1524" layer="16"/>
 </signal>
 <signal name="DTR">
 <contactref element="J1" pad="1"/>
@@ -2983,12 +2995,11 @@ Your Multi-CB Team
 <signal name="N$4">
 <contactref element="C5" pad="1"/>
 <contactref element="ANT1" pad="RF_FEED"/>
-<wire x1="67.6" y1="30.65" x2="67.88" y2="30.93" width="0.1524" layer="1"/>
 <contactref element="C4" pad="1"/>
-<wire x1="67.2" y1="31.05" x2="67.6" y2="30.65" width="0.1524" layer="1"/>
 <wire x1="65.46" y1="29.23" x2="65.48" y2="29.25" width="0.508" layer="1"/>
 <wire x1="65.48" y1="29.25" x2="65.48" y2="31.05" width="0.508" layer="1"/>
-<wire x1="65.48" y1="31.05" x2="67.2" y2="31.05" width="0.508" layer="1"/>
+<wire x1="67.88" y1="30.93" x2="65.6" y2="30.93" width="0.508" layer="1"/>
+<wire x1="65.6" y1="30.93" x2="65.48" y2="31.05" width="0.1524" layer="1"/>
 </signal>
 <signal name="SDA">
 <contactref element="J3" pad="2"/>
@@ -3243,9 +3254,6 @@ Your Multi-CB Team
 </signal>
 <signal name="CTS">
 <contactref element="J1" pad="5"/>
-<contactref element="U5" pad="11"/>
-<wire x1="33.775" y1="4.744" x2="33.775" y2="2.285" width="0.1524" layer="1"/>
-<wire x1="33.775" y1="2.285" x2="33.86" y2="2.2" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$17">
 <contactref element="U6" pad="3"/>

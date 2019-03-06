@@ -4896,77 +4896,6 @@ by exp-lbrs.ulp</description>
 <text x="-1.35075" y="1.30071875" size="0.30496875" layer="25">&gt;NAME</text>
 <text x="-1.25371875" y="-1.755209375" size="0.30570625" layer="27">&gt;VALUE</text>
 </package>
-<package name="PROANT_ONBOARD_SMD_2400">
-<description>Proant SMD OnBoard Antenna for 868/2400MHz (SigFox)
-Part Number: PRO-OB-518</description>
-<wire x1="-8" y1="16" x2="8" y2="16" width="0.127" layer="51"/>
-<wire x1="8" y1="16" x2="8" y2="-16" width="0.127" layer="51"/>
-<wire x1="8" y1="-16" x2="-8" y2="-16" width="0.127" layer="51"/>
-<wire x1="-8" y1="-16" x2="-8" y2="16" width="0.127" layer="51"/>
-<wire x1="5.9" y1="17" x2="5.9" y2="-17" width="0.127" layer="21"/>
-<wire x1="5.9" y1="-17" x2="-5.9" y2="-17" width="0.127" layer="21"/>
-<wire x1="-5.9" y1="-17" x2="-5.9" y2="17" width="0.127" layer="21"/>
-<wire x1="-5.9" y1="17" x2="5.9" y2="17" width="0.127" layer="21"/>
-<smd name="GND" x="5" y="14.8" dx="2.5" dy="1.6" layer="1"/>
-<smd name="NC$1" x="-4.8" y="9.7" dx="1.95" dy="1" layer="1"/>
-<smd name="NC$2" x="5" y="3" dx="1.95" dy="1" layer="1"/>
-<smd name="NC$3" x="5" y="-13.8" dx="1.95" dy="1" layer="1"/>
-<smd name="NC$4" x="-4.8" y="-13.8" dx="1.95" dy="1" layer="1"/>
-<smd name="RF_FEED" x="5" y="9.7" dx="2.5" dy="1.6" layer="1"/>
-<text x="-2.9" y="-2.2" size="1.27" layer="27">&gt;Value</text>
-<text x="-2.9" y="-6" size="1.27" layer="25">&gt;Name</text>
-<polygon width="0.127" layer="1" pour="hatch">
-<vertex x="2.6" y="4.95"/>
-<vertex x="7.4" y="4.95"/>
-<vertex x="7.4" y="1.05"/>
-<vertex x="2.6" y="1.05"/>
-</polygon>
-<polygon width="0.127" layer="1" pour="hatch">
-<vertex x="2.6" y="-11.75"/>
-<vertex x="7.4" y="-11.75"/>
-<vertex x="7.4" y="-15.65"/>
-<vertex x="2.6" y="-15.65"/>
-</polygon>
-<polygon width="0.127" layer="1" pour="hatch">
-<vertex x="-7" y="-11.75"/>
-<vertex x="-2.2" y="-11.75"/>
-<vertex x="-2.2" y="-15.65"/>
-<vertex x="-7" y="-15.65"/>
-</polygon>
-<polygon width="0.127" layer="1" pour="hatch">
-<vertex x="-7.2" y="11.65"/>
-<vertex x="-2.4" y="11.65"/>
-<vertex x="-2.4" y="7.75"/>
-<vertex x="-7.2" y="7.75"/>
-</polygon>
-<polygon width="0.127" layer="16" pour="hatch">
-<vertex x="-7.2" y="11.6"/>
-<vertex x="-2.4" y="11.6"/>
-<vertex x="-2.4" y="7.8"/>
-<vertex x="-7.2" y="7.8"/>
-</polygon>
-<polygon width="0.127" layer="16" pour="hatch">
-<vertex x="2.6" y="4.9"/>
-<vertex x="7.4" y="4.9"/>
-<vertex x="7.4" y="1"/>
-<vertex x="2.6" y="1"/>
-<vertex x="2.6" y="1.1"/>
-</polygon>
-<polygon width="0.127" layer="16" pour="hatch">
-<vertex x="2.6" y="-11.8"/>
-<vertex x="7.4" y="-11.8"/>
-<vertex x="7.4" y="-11.9"/>
-<vertex x="7.4" y="-15.7"/>
-<vertex x="2.6" y="-15.7"/>
-</polygon>
-<polygon width="0.127" layer="16" pour="hatch">
-<vertex x="-7" y="-11.8"/>
-<vertex x="-2.2" y="-11.8"/>
-<vertex x="-2.2" y="-15.7"/>
-<vertex x="-7" y="-15.7"/>
-<vertex x="-7" y="-15.6"/>
-</polygon>
-</package>
 <package name="BME280COMPONENTLIBRARY_BME280_LGA">
 <circle x="1.74625" y="1.74625" radius="0.15875" width="0.127" layer="21"/>
 <circle x="1.74625" y="1.74625" radius="0.079375" width="0.127" layer="21"/>
@@ -5184,17 +5113,6 @@ L×W : 2.9mm×1.5mm&lt;p&gt;
 <text x="-12.7072" y="13.2155" size="1.779009375" layer="95">&gt;NAME</text>
 <text x="-12.7322" y="-15.2787" size="1.7825" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="PROANT_PRO-OB-512">
-<description>Symbol for Proant OnBoard Antenna PRO-OB-518
-For more information see here http://www.proant.se/files/user/Application%20note%20-%20OnBoard%20SMD%20868-2400%20MHz%20rev%201.3.pdf</description>
-<pin name="GND" x="-5.08" y="5.08" visible="off" length="short" direction="pwr"/>
-<pin name="RF_FEED" x="0" y="-5.08" visible="off" length="short" direction="in" rot="R90"/>
-<text x="-5.08" y="-5.08" size="1.778" layer="95" rot="R90">&gt;Name</text>
-<wire x1="-5.08" y1="7.62" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="5.08" y1="7.62" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="0" y2="5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
-</symbol>
 <symbol name="BME280COMPONENTLIBRARY_BME280">
 <wire x1="-12.7" y1="10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
 <wire x1="12.7" y1="10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
@@ -5324,23 +5242,6 @@ See: https://www.digikey.ie/product-detail/en/mpd-memory-protection-devices/BH-C
 <attribute name="MP" value="LIS3MDLTR"/>
 <attribute name="PACKAGE" value="VFLGA-12 STMicroelectronics"/>
 </technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="PROANT_PRO-OB-512" prefix="ANT">
-<description>Proant OnBoard Antenna PRO-OB-512 for 848/2400MHz comms (e.g. SigFox)</description>
-<gates>
-<gate name="ANT1" symbol="PROANT_PRO-OB-512" x="0" y="0"/>
-</gates>
-<devices>
-<device name="ONBOARD" package="PROANT_ONBOARD_SMD_2400">
-<connects>
-<connect gate="ANT1" pin="GND" pad="GND"/>
-<connect gate="ANT1" pin="RF_FEED" pad="RF_FEED"/>
-</connects>
-<technologies>
-<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -6452,6 +6353,114 @@ These vary by manufacturer, but we used the NPIS54LS footprint from here.</descr
 </deviceset>
 </devicesets>
 </library>
+<library name="proant">
+<packages>
+<package name="ONBOARD_SMD_2400">
+<description>Proant SMD OnBoard Antenna for 868/2400MHz (SigFox)
+Part Number: PRO-OB-518</description>
+<smd name="NC$2" x="5" y="3" dx="1.95" dy="1" layer="1"/>
+<polygon width="0.127" layer="1" pour="cutout">
+<vertex x="2.6" y="4.95"/>
+<vertex x="7.4" y="4.95"/>
+<vertex x="7.4" y="1.05"/>
+<vertex x="2.6" y="1.05"/>
+</polygon>
+<smd name="NC$3" x="5" y="-13.8" dx="1.95" dy="1" layer="1"/>
+<smd name="NC$4" x="-4.8" y="-13.8" dx="1.95" dy="1" layer="1"/>
+<smd name="NC$1" x="-4.8" y="9.7" dx="1.95" dy="1" layer="1"/>
+<polygon width="0.127" layer="1" pour="cutout">
+<vertex x="2.6" y="-11.75"/>
+<vertex x="7.4" y="-11.75"/>
+<vertex x="7.4" y="-15.65"/>
+<vertex x="2.6" y="-15.65"/>
+</polygon>
+<polygon width="0.127" layer="1" pour="cutout">
+<vertex x="-7" y="-11.75"/>
+<vertex x="-2.2" y="-11.75"/>
+<vertex x="-2.2" y="-15.65"/>
+<vertex x="-7" y="-15.65"/>
+</polygon>
+<polygon width="0.127" layer="1" pour="cutout">
+<vertex x="-7.2" y="11.65"/>
+<vertex x="-2.4" y="11.65"/>
+<vertex x="-2.4" y="7.75"/>
+<vertex x="-7.2" y="7.75"/>
+</polygon>
+<smd name="GND" x="5" y="14.8" dx="2.5" dy="1.6" layer="1"/>
+<smd name="RF_FEED" x="5" y="9.7" dx="2.5" dy="1.6" layer="1"/>
+<wire x1="-8" y1="16" x2="8" y2="16" width="0.127" layer="51"/>
+<wire x1="8" y1="16" x2="8" y2="-19" width="0.127" layer="51"/>
+<wire x1="8" y1="-19" x2="-8" y2="-19" width="0.127" layer="51"/>
+<wire x1="-8" y1="-19" x2="-8" y2="16" width="0.127" layer="51"/>
+<wire x1="6.4" y1="15.8" x2="6.4" y2="-18.6" width="0.127" layer="21"/>
+<wire x1="6.4" y1="-18.6" x2="-6" y2="-18.6" width="0.127" layer="21"/>
+<wire x1="-6" y1="-18.6" x2="-6" y2="15.8" width="0.127" layer="21"/>
+<wire x1="-6" y1="15.8" x2="6.4" y2="15.8" width="0.127" layer="21"/>
+<text x="-2.9" y="-2.2" size="1.27" layer="27">&gt;Value</text>
+<text x="-2.9" y="-6" size="1.27" layer="25">&gt;Name</text>
+<polygon width="0.127" layer="16" pour="cutout">
+<vertex x="-7.2" y="11.6"/>
+<vertex x="-2.4" y="11.6"/>
+<vertex x="-2.4" y="7.8"/>
+<vertex x="-7.2" y="7.8"/>
+</polygon>
+<polygon width="0.127" layer="16" pour="cutout">
+<vertex x="2.6" y="4.9"/>
+<vertex x="7.4" y="4.9"/>
+<vertex x="7.4" y="1"/>
+<vertex x="2.6" y="1"/>
+<vertex x="2.6" y="1.1"/>
+</polygon>
+<polygon width="0.127" layer="16" pour="cutout">
+<vertex x="2.6" y="-11.8"/>
+<vertex x="7.4" y="-11.8"/>
+<vertex x="7.4" y="-11.9"/>
+<vertex x="7.4" y="-15.7"/>
+<vertex x="2.6" y="-15.7"/>
+</polygon>
+<polygon width="0.127" layer="16" pour="cutout">
+<vertex x="-7" y="-11.8"/>
+<vertex x="-2.2" y="-11.8"/>
+<vertex x="-2.2" y="-15.7"/>
+<vertex x="-7" y="-15.7"/>
+<vertex x="-7" y="-15.6"/>
+</polygon>
+</package>
+</packages>
+<symbols>
+<symbol name="PRO-OB-512">
+<description>Symbol for Proant OnBoard Antenna PRO-OB-518
+For more information see here http://www.proant.se/files/user/Application%20note%20-%20OnBoard%20SMD%20868-2400%20MHz%20rev%201.3.pdf</description>
+<wire x1="12.7" y1="25.4" x2="12.7" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-22.86" x2="-12.7" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-22.86" x2="-12.7" y2="25.4" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="25.4" x2="12.7" y2="25.4" width="0.254" layer="94"/>
+<pin name="GND" x="15.24" y="20.32" length="short" direction="pwr" rot="R180"/>
+<pin name="RF_FEED" x="15.24" y="12.7" length="short" direction="in" rot="R180"/>
+<text x="-12.7" y="25.4" size="1.778" layer="95">&gt;Name</text>
+<text x="-12.7" y="-25.4" size="1.778" layer="96">&gt;Value</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PRO-OB-512" prefix="ANT">
+<description>Proant OnBoard Antenna PRO-OB-512 for 848/2400MHz comms (e.g. SigFox)</description>
+<gates>
+<gate name="ANT1" symbol="PRO-OB-512" x="0" y="0"/>
+</gates>
+<devices>
+<device name="ONBOARD" package="ONBOARD_SMD_2400">
+<connects>
+<connect gate="ANT1" pin="GND" pad="GND"/>
+<connect gate="ANT1" pin="RF_FEED" pad="RF_FEED"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6503,7 +6512,7 @@ These vary by manufacturer, but we used the NPIS54LS footprint from here.</descr
 <part name="R5" library="SparkFun-Resistors" deviceset="100KOHM" device="-0603-1/10W-1%" value="100k"/>
 <part name="GND14" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
-<part name="ANT1" library="Siguino" deviceset="PROANT_PRO-OB-512" device="ONBOARD" value="PROOB518"/>
+<part name="ANT1" library="proant" deviceset="PRO-OB-512" device="ONBOARD" value="PROOB518"/>
 <part name="R6" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
 <part name="SUPPLY8" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="GND6" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
@@ -6707,8 +6716,8 @@ Sensor</text>
 <instance part="SUPPLY5" gate="G$1" x="279.4" y="81.28" smashed="yes">
 <attribute name="VALUE" x="279.4" y="84.074" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="ANT1" gate="ANT1" x="226.06" y="157.48" smashed="yes" rot="MR0">
-<attribute name="NAME" x="223.52" y="160.02" size="1.778" layer="95" rot="MR0"/>
+<instance part="ANT1" gate="ANT1" x="231.14" y="182.88" smashed="yes" rot="MR270">
+<attribute name="NAME" x="228.6" y="180.34" size="1.778" layer="95" rot="MR270"/>
 </instance>
 <instance part="R6" gate="G$1" x="53.34" y="114.3" smashed="yes" rot="R90">
 <attribute name="NAME" x="51.816" y="114.3" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
@@ -6782,8 +6791,8 @@ Sensor</text>
 <instance part="SUPPLY10" gate="G$1" x="157.48" y="121.92" smashed="yes">
 <attribute name="VALUE" x="157.48" y="124.714" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="GND20" gate="1" x="233.68" y="162.56" smashed="yes" rot="R90">
-<attribute name="VALUE" x="233.934" y="162.56" size="1.778" layer="96" rot="R90" align="top-center"/>
+<instance part="GND20" gate="1" x="210.82" y="157.48" smashed="yes">
+<attribute name="VALUE" x="210.82" y="157.226" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="U5" gate="G$1" x="388.62" y="33.02" smashed="yes">
 <attribute name="NAME" x="381" y="53.848" size="1.778" layer="95"/>
@@ -6911,10 +6920,6 @@ Sensor</text>
 <junction x="172.72" y="43.18"/>
 <pinref part="C15" gate="G$1" pin="1"/>
 <wire x1="182.88" y1="45.72" x2="182.88" y2="43.18" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND20" gate="1" pin="GND"/>
-<pinref part="ANT1" gate="ANT1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
@@ -7071,6 +7076,10 @@ Sensor</text>
 <wire x1="373.38" y1="15.24" x2="368.3" y2="15.24" width="0.1524" layer="91"/>
 <junction x="368.3" y="15.24"/>
 <pinref part="GND22" gate="1" pin="GND"/>
+<pinref part="U5" gate="G$1" pin="TEST"/>
+<wire x1="373.38" y1="25.4" x2="368.3" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="368.3" y1="25.4" x2="368.3" y2="22.86" width="0.1524" layer="91"/>
+<junction x="368.3" y="22.86"/>
 </segment>
 <segment>
 <pinref part="U6" gate="A" pin="GND"/>
@@ -7086,6 +7095,16 @@ Sensor</text>
 <pinref part="Q2" gate="G$1" pin="G"/>
 <wire x1="363.22" y1="81.28" x2="368.3" y2="81.28" width="0.1524" layer="91"/>
 <label x="368.3" y="81.28" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U5" gate="G$1" pin="CTS"/>
+<wire x1="403.86" y1="43.18" x2="408.94" y2="43.18" width="0.1524" layer="91"/>
+<label x="408.94" y="43.18" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="ANT1" gate="ANT1" pin="GND"/>
+<pinref part="GND20" gate="1" pin="GND"/>
+<wire x1="210.82" y1="167.64" x2="210.82" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -7231,9 +7250,9 @@ Sensor</text>
 <label x="104.14" y="43.18" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U5" gate="G$1" pin="RXD"/>
-<wire x1="403.86" y1="48.26" x2="408.94" y2="48.26" width="0.1524" layer="91"/>
-<label x="408.94" y="48.26" size="1.27" layer="95" xref="yes"/>
+<pinref part="U5" gate="G$1" pin="TXD"/>
+<wire x1="403.86" y1="50.8" x2="408.94" y2="50.8" width="0.1524" layer="91"/>
+<label x="408.94" y="50.8" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="TXO" class="0">
@@ -7248,9 +7267,9 @@ Sensor</text>
 <label x="104.14" y="40.64" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U5" gate="G$1" pin="TXD"/>
-<wire x1="403.86" y1="50.8" x2="408.94" y2="50.8" width="0.1524" layer="91"/>
-<label x="408.94" y="50.8" size="1.27" layer="95" xref="yes"/>
+<pinref part="U5" gate="G$1" pin="RXD"/>
+<wire x1="403.86" y1="48.26" x2="408.94" y2="48.26" width="0.1524" layer="91"/>
+<label x="408.94" y="48.26" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="DTR" class="0">
@@ -7505,8 +7524,8 @@ Sensor</text>
 <net name="N$4" class="0">
 <segment>
 <wire x1="236.22" y1="147.32" x2="233.68" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="233.68" y1="147.32" x2="226.06" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="147.32" x2="226.06" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="147.32" x2="218.44" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="147.32" x2="218.44" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="1"/>
 <pinref part="ANT1" gate="ANT1" pin="RF_FEED"/>
 <pinref part="C4" gate="G$1" pin="1"/>
@@ -7771,11 +7790,6 @@ Sensor</text>
 <pinref part="J1" gate="G$1" pin="CTS"/>
 <wire x1="15.24" y1="119.38" x2="17.78" y2="119.38" width="0.1524" layer="91"/>
 <label x="17.78" y="119.38" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U5" gate="G$1" pin="CTS"/>
-<wire x1="403.86" y1="43.18" x2="408.94" y2="43.18" width="0.1524" layer="91"/>
-<label x="408.94" y="43.18" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$17" class="0">
