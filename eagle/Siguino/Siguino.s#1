@@ -6428,11 +6428,9 @@ Part Number: PRO-OB-518</description>
 </package>
 </packages>
 <symbols>
-<symbol name="PRO-OB-471">
+<symbol name="PRO-OB-512">
 <description>Symbol for Proant OnBoard Antenna PRO-OB-518
-For more information see here:
-
-http://www.proant.se/files/user/Datasheet%20-%20OnBoard%20SMD%20868-915%20MHz%20rev%202.0.pdf</description>
+For more information see here http://www.proant.se/files/user/Application%20note%20-%20OnBoard%20SMD%20868-2400%20MHz%20rev%201.3.pdf</description>
 <wire x1="12.7" y1="25.4" x2="12.7" y2="-22.86" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-22.86" x2="-12.7" y2="-22.86" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="-22.86" x2="-12.7" y2="25.4" width="0.254" layer="94"/>
@@ -6444,10 +6442,10 @@ http://www.proant.se/files/user/Datasheet%20-%20OnBoard%20SMD%20868-915%20MHz%20
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="PRO-OB-471" prefix="ANT">
-<description>Proant OnBoard Antenna PRO-OB-471 for 868/915MHz comms (e.g. SigFox)</description>
+<deviceset name="PRO-OB-512" prefix="ANT">
+<description>Proant OnBoard Antenna PRO-OB-512 for 848/2400MHz comms (e.g. SigFox)</description>
 <gates>
-<gate name="ANT1" symbol="PRO-OB-471" x="0" y="0"/>
+<gate name="ANT1" symbol="PRO-OB-512" x="0" y="0"/>
 </gates>
 <devices>
 <device name="ONBOARD" package="ONBOARD_SMD_2400">
@@ -6514,7 +6512,7 @@ http://www.proant.se/files/user/Datasheet%20-%20OnBoard%20SMD%20868-915%20MHz%20
 <part name="R5" library="SparkFun-Resistors" deviceset="100KOHM" device="-0603-1/10W-1%" value="100k"/>
 <part name="GND14" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
-<part name="ANT1" library="proant" deviceset="PRO-OB-471" device="ONBOARD" value="PRO-OB-471"/>
+<part name="ANT1" library="proant" deviceset="PRO-OB-512" device="ONBOARD" value="PROOB518"/>
 <part name="R6" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
 <part name="SUPPLY8" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="GND6" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>

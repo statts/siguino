@@ -95,10 +95,10 @@ Part Number: PRO-OB-518</description>
 <wire x1="8" y1="16" x2="8" y2="-19" width="0.127" layer="51"/>
 <wire x1="8" y1="-19" x2="-8" y2="-19" width="0.127" layer="51"/>
 <wire x1="-8" y1="-19" x2="-8" y2="16" width="0.127" layer="51"/>
-<wire x1="6.2" y1="15.6" x2="6.2" y2="-18.4" width="0.127" layer="21"/>
-<wire x1="6.2" y1="-18.4" x2="-5.8" y2="-18.4" width="0.127" layer="21"/>
-<wire x1="-5.8" y1="-18.4" x2="-5.8" y2="15.6" width="0.127" layer="21"/>
-<wire x1="-5.8" y1="15.6" x2="6.2" y2="15.6" width="0.127" layer="21"/>
+<wire x1="6.4" y1="15.8" x2="6.4" y2="-18.6" width="0.127" layer="21"/>
+<wire x1="6.4" y1="-18.6" x2="-6" y2="-18.6" width="0.127" layer="21"/>
+<wire x1="-6" y1="-18.6" x2="-6" y2="15.8" width="0.127" layer="21"/>
+<wire x1="-6" y1="15.8" x2="6.4" y2="15.8" width="0.127" layer="21"/>
 <text x="-2.9" y="-2.2" size="1.27" layer="27">&gt;Value</text>
 <text x="-2.9" y="-6" size="1.27" layer="25">&gt;Name</text>
 <polygon width="0.127" layer="16" pour="cutout">

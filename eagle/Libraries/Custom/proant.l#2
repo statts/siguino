@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -92,13 +92,13 @@ Part Number: PRO-OB-518</description>
 <smd name="GND" x="5" y="14.8" dx="2.5" dy="1.6" layer="1"/>
 <smd name="RF_FEED" x="5" y="9.7" dx="2.5" dy="1.6" layer="1"/>
 <wire x1="-8" y1="16" x2="8" y2="16" width="0.127" layer="51"/>
-<wire x1="8" y1="16" x2="8" y2="-16" width="0.127" layer="51"/>
-<wire x1="8" y1="-16" x2="-8" y2="-16" width="0.127" layer="51"/>
-<wire x1="-8" y1="-16" x2="-8" y2="16" width="0.127" layer="51"/>
-<wire x1="5.9" y1="17" x2="5.9" y2="-17" width="0.127" layer="21"/>
-<wire x1="5.9" y1="-17" x2="-5.9" y2="-17" width="0.127" layer="21"/>
-<wire x1="-5.9" y1="-17" x2="-5.9" y2="17" width="0.127" layer="21"/>
-<wire x1="-5.9" y1="17" x2="5.9" y2="17" width="0.127" layer="21"/>
+<wire x1="8" y1="16" x2="8" y2="-19" width="0.127" layer="51"/>
+<wire x1="8" y1="-19" x2="-8" y2="-19" width="0.127" layer="51"/>
+<wire x1="-8" y1="-19" x2="-8" y2="16" width="0.127" layer="51"/>
+<wire x1="6.2" y1="15.6" x2="6.2" y2="-18.4" width="0.127" layer="21"/>
+<wire x1="6.2" y1="-18.4" x2="-5.8" y2="-18.4" width="0.127" layer="21"/>
+<wire x1="-5.8" y1="-18.4" x2="-5.8" y2="15.6" width="0.127" layer="21"/>
+<wire x1="-5.8" y1="15.6" x2="6.2" y2="15.6" width="0.127" layer="21"/>
 <text x="-2.9" y="-2.2" size="1.27" layer="27">&gt;Value</text>
 <text x="-2.9" y="-6" size="1.27" layer="25">&gt;Name</text>
 <polygon width="0.127" layer="16" pour="cutout">
