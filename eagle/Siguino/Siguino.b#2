@@ -1098,6 +1098,77 @@ by exp-lbrs.ulp</description>
 <text x="-1.35075" y="1.30071875" size="0.30496875" layer="25">&gt;NAME</text>
 <text x="-1.25371875" y="-1.755209375" size="0.30570625" layer="27">&gt;VALUE</text>
 </package>
+<package name="PROANT_ONBOARD_SMD_2400">
+<description>Proant SMD OnBoard Antenna for 868/2400MHz (SigFox)
+Part Number: PRO-OB-518</description>
+<wire x1="-8" y1="16" x2="8" y2="16" width="0.127" layer="51"/>
+<wire x1="8" y1="16" x2="8" y2="-16" width="0.127" layer="51"/>
+<wire x1="8" y1="-16" x2="-8" y2="-16" width="0.127" layer="51"/>
+<wire x1="-8" y1="-16" x2="-8" y2="16" width="0.127" layer="51"/>
+<wire x1="5.9" y1="17" x2="5.9" y2="-17" width="0.127" layer="21"/>
+<wire x1="5.9" y1="-17" x2="-5.9" y2="-17" width="0.127" layer="21"/>
+<wire x1="-5.9" y1="-17" x2="-5.9" y2="17" width="0.127" layer="21"/>
+<wire x1="-5.9" y1="17" x2="5.9" y2="17" width="0.127" layer="21"/>
+<smd name="GND" x="5" y="14.8" dx="2.5" dy="1.6" layer="1"/>
+<smd name="NC$1" x="-4.8" y="9.7" dx="1.95" dy="1" layer="1"/>
+<smd name="NC$2" x="5" y="3" dx="1.95" dy="1" layer="1"/>
+<smd name="NC$3" x="5" y="-13.8" dx="1.95" dy="1" layer="1"/>
+<smd name="NC$4" x="-4.8" y="-13.8" dx="1.95" dy="1" layer="1"/>
+<smd name="RF_FEED" x="5" y="9.7" dx="2.5" dy="1.6" layer="1"/>
+<text x="-2.9" y="-2.2" size="1.27" layer="27">&gt;Value</text>
+<text x="-2.9" y="-6" size="1.27" layer="25">&gt;Name</text>
+<polygon width="0.127" layer="1" pour="hatch">
+<vertex x="2.6" y="4.95"/>
+<vertex x="7.4" y="4.95"/>
+<vertex x="7.4" y="1.05"/>
+<vertex x="2.6" y="1.05"/>
+</polygon>
+<polygon width="0.127" layer="1" pour="hatch">
+<vertex x="2.6" y="-11.75"/>
+<vertex x="7.4" y="-11.75"/>
+<vertex x="7.4" y="-15.65"/>
+<vertex x="2.6" y="-15.65"/>
+</polygon>
+<polygon width="0.127" layer="1" pour="hatch">
+<vertex x="-7" y="-11.75"/>
+<vertex x="-2.2" y="-11.75"/>
+<vertex x="-2.2" y="-15.65"/>
+<vertex x="-7" y="-15.65"/>
+</polygon>
+<polygon width="0.127" layer="1" pour="hatch">
+<vertex x="-7.2" y="11.65"/>
+<vertex x="-2.4" y="11.65"/>
+<vertex x="-2.4" y="7.75"/>
+<vertex x="-7.2" y="7.75"/>
+</polygon>
+<polygon width="0.127" layer="16" pour="hatch">
+<vertex x="-7.2" y="11.6"/>
+<vertex x="-2.4" y="11.6"/>
+<vertex x="-2.4" y="7.8"/>
+<vertex x="-7.2" y="7.8"/>
+</polygon>
+<polygon width="0.127" layer="16" pour="hatch">
+<vertex x="2.6" y="4.9"/>
+<vertex x="7.4" y="4.9"/>
+<vertex x="7.4" y="1"/>
+<vertex x="2.6" y="1"/>
+<vertex x="2.6" y="1.1"/>
+</polygon>
+<polygon width="0.127" layer="16" pour="hatch">
+<vertex x="2.6" y="-11.8"/>
+<vertex x="7.4" y="-11.8"/>
+<vertex x="7.4" y="-11.9"/>
+<vertex x="7.4" y="-15.7"/>
+<vertex x="2.6" y="-15.7"/>
+</polygon>
+<polygon width="0.127" layer="16" pour="hatch">
+<vertex x="-7" y="-11.8"/>
+<vertex x="-2.2" y="-11.8"/>
+<vertex x="-2.2" y="-15.7"/>
+<vertex x="-7" y="-15.7"/>
+<vertex x="-7" y="-15.6"/>
+</polygon>
+</package>
 <package name="BME280COMPONENTLIBRARY_BME280_LGA">
 <circle x="1.74625" y="1.74625" radius="0.15875" width="0.127" layer="21"/>
 <circle x="1.74625" y="1.74625" radius="0.079375" width="0.127" layer="21"/>
@@ -1294,81 +1365,6 @@ L×W : 2.9mm×1.5mm&lt;p&gt;
 <text x="1.7" y="11.7" size="0.6096" layer="21">ver R2 &amp; R4</text>
 <text x="-6.35" y="12.7" size="0.6096" layer="25">&gt;NAME</text>
 <text x="6.35" y="13.97" size="0.6096" layer="27" rot="R180">&gt;VALUE</text>
-</package>
-</packages>
-</library>
-<library name="proant">
-<packages>
-<package name="ONBOARD_SMD_2400">
-<description>Proant SMD OnBoard Antenna for 868/2400MHz (SigFox)
-Part Number: PRO-OB-518</description>
-<smd name="NC$2" x="5" y="3" dx="1.95" dy="1" layer="1"/>
-<polygon width="0.127" layer="1" pour="cutout">
-<vertex x="2.6" y="4.95"/>
-<vertex x="7.4" y="4.95"/>
-<vertex x="7.4" y="1.05"/>
-<vertex x="2.6" y="1.05"/>
-</polygon>
-<smd name="NC$3" x="5" y="-13.8" dx="1.95" dy="1" layer="1"/>
-<smd name="NC$4" x="-4.8" y="-13.8" dx="1.95" dy="1" layer="1"/>
-<smd name="NC$1" x="-4.8" y="9.7" dx="1.95" dy="1" layer="1"/>
-<polygon width="0.127" layer="1" pour="cutout">
-<vertex x="2.6" y="-11.75"/>
-<vertex x="7.4" y="-11.75"/>
-<vertex x="7.4" y="-15.65"/>
-<vertex x="2.6" y="-15.65"/>
-</polygon>
-<polygon width="0.127" layer="1" pour="cutout">
-<vertex x="-7" y="-11.75"/>
-<vertex x="-2.2" y="-11.75"/>
-<vertex x="-2.2" y="-15.65"/>
-<vertex x="-7" y="-15.65"/>
-</polygon>
-<polygon width="0.127" layer="1" pour="cutout">
-<vertex x="-7.2" y="11.65"/>
-<vertex x="-2.4" y="11.65"/>
-<vertex x="-2.4" y="7.75"/>
-<vertex x="-7.2" y="7.75"/>
-</polygon>
-<smd name="GND" x="5" y="14.8" dx="2.5" dy="1.6" layer="1"/>
-<smd name="RF_FEED" x="5" y="9.7" dx="2.5" dy="1.6" layer="1"/>
-<wire x1="-8" y1="16" x2="8" y2="16" width="0.127" layer="51"/>
-<wire x1="8" y1="16" x2="8" y2="-16" width="0.127" layer="51"/>
-<wire x1="8" y1="-16" x2="-8" y2="-16" width="0.127" layer="51"/>
-<wire x1="-8" y1="-16" x2="-8" y2="16" width="0.127" layer="51"/>
-<wire x1="5.9" y1="17" x2="5.9" y2="-17" width="0.127" layer="21"/>
-<wire x1="5.9" y1="-17" x2="-5.9" y2="-17" width="0.127" layer="21"/>
-<wire x1="-5.9" y1="-17" x2="-5.9" y2="17" width="0.127" layer="21"/>
-<wire x1="-5.9" y1="17" x2="5.9" y2="17" width="0.127" layer="21"/>
-<text x="-2.9" y="-2.2" size="1.27" layer="27">&gt;Value</text>
-<text x="-2.9" y="-6" size="1.27" layer="25">&gt;Name</text>
-<polygon width="0.127" layer="16" pour="cutout">
-<vertex x="-7.2" y="11.6"/>
-<vertex x="-2.4" y="11.6"/>
-<vertex x="-2.4" y="7.8"/>
-<vertex x="-7.2" y="7.8"/>
-</polygon>
-<polygon width="0.127" layer="16" pour="cutout">
-<vertex x="2.6" y="4.9"/>
-<vertex x="7.4" y="4.9"/>
-<vertex x="7.4" y="1"/>
-<vertex x="2.6" y="1"/>
-<vertex x="2.6" y="1.1"/>
-</polygon>
-<polygon width="0.127" layer="16" pour="cutout">
-<vertex x="2.6" y="-11.8"/>
-<vertex x="7.4" y="-11.8"/>
-<vertex x="7.4" y="-11.9"/>
-<vertex x="7.4" y="-15.7"/>
-<vertex x="2.6" y="-15.7"/>
-</polygon>
-<polygon width="0.127" layer="16" pour="cutout">
-<vertex x="-7" y="-11.8"/>
-<vertex x="-2.2" y="-11.8"/>
-<vertex x="-2.2" y="-15.7"/>
-<vertex x="-7" y="-15.7"/>
-<vertex x="-7" y="-15.6"/>
-</polygon>
 </package>
 </packages>
 </library>
@@ -1706,7 +1702,7 @@ Your Multi-CB Team
 <attribute name="PROD_ID" value="RES-07828" x="48.1" y="15.1" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="48.1" y="14.338" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="ANT1" library="proant" package="ONBOARD_SMD_2400" value="PROOB471" x="62.4" y="20.5" smashed="yes">
+<element name="ANT1" library="Siguino" package="PROANT_ONBOARD_SMD_2400" value="PROOB471" x="62.4" y="20.5" smashed="yes">
 <attribute name="NAME" x="59.5" y="14.5" size="1.27" layer="25"/>
 <attribute name="VALUE" x="59.5" y="18.3" size="1.27" layer="27"/>
 </element>
@@ -1799,6 +1795,7 @@ Your Multi-CB Team
 <contactref element="C9" pad="1"/>
 <contactref element="C12" pad="1"/>
 <contactref element="C13" pad="2"/>
+<contactref element="ANT1" pad="GND"/>
 <wire x1="25.54" y1="27.78" x2="26.78" y2="27.78" width="0.1524" layer="1"/>
 <wire x1="26.78" y1="27.78" x2="27.2" y2="28.2" width="0.1524" layer="1"/>
 <via x="27.2" y="28.2" extent="1-16" drill="0.35"/>
@@ -1965,58 +1962,6 @@ Your Multi-CB Team
 <wire x1="26.35" y1="9.7445375" x2="26.4738" y2="9.8683375" width="0.15" layer="1"/>
 <wire x1="26.35" y1="9.56" x2="26.35" y2="9.3754625" width="0.15" layer="1"/>
 <wire x1="26.35" y1="9.3754625" x2="26.2662" y2="9.2916625" width="0.15" layer="1"/>
-<contactref element="ANT1" pad="GND"/>
-<wire x1="65" y1="31.48" x2="67.4" y2="35.3" width="0" layer="19" extent="1-1"/>
-<wire x1="63.8" y1="31.48" x2="65" y2="31.48" width="0" layer="19" extent="1-1"/>
-<wire x1="61.5" y1="27.5" x2="63.8" y2="31.48" width="0" layer="19" extent="1-1"/>
-<wire x1="60.6" y1="27.5" x2="61.5" y2="27.5" width="0" layer="19" extent="1-1"/>
-<wire x1="59.7" y1="27.5" x2="60.6" y2="27.5" width="0" layer="19" extent="1-1"/>
-<wire x1="58.6" y1="27.5" x2="59.7" y2="27.5" width="0" layer="19" extent="1-1"/>
-<wire x1="57.5" y1="27.5" x2="58.6" y2="27.5" width="0" layer="19" extent="1-1"/>
-<wire x1="56.4" y1="27.5" x2="57.5" y2="27.5" width="0" layer="19" extent="1-1"/>
-<wire x1="55.5" y1="27.5" x2="56.4" y2="27.5" width="0" layer="19" extent="1-1"/>
-<wire x1="54.5" y1="28.5" x2="55.5" y2="27.5" width="0" layer="19" extent="1-1"/>
-<wire x1="54.4" y1="29.4" x2="54.5" y2="28.5" width="0" layer="19" extent="1-1"/>
-<wire x1="54.1" y1="30.2" x2="54.4" y2="29.4" width="0" layer="19" extent="1-1"/>
-<wire x1="53.3" y1="30.9" x2="54.1" y2="30.2" width="0" layer="19" extent="1-1"/>
-<wire x1="52.5" y1="31.3" x2="53.3" y2="30.9" width="0" layer="19" extent="1-1"/>
-<wire x1="61.5" y1="25.7" x2="61.5" y2="27.5" width="0" layer="19" extent="1-1"/>
-<wire x1="60.6" y1="25.7" x2="61.5" y2="25.7" width="0" layer="19" extent="1-1"/>
-<wire x1="59.7" y1="25.7" x2="60.6" y2="25.7" width="0" layer="19" extent="1-1"/>
-<wire x1="58.8" y1="25.7" x2="59.7" y2="25.7" width="0" layer="19" extent="1-1"/>
-<wire x1="57.9" y1="25.7" x2="58.8" y2="25.7" width="0" layer="19" extent="1-1"/>
-<wire x1="57" y1="25.7" x2="57.9" y2="25.7" width="0" layer="19" extent="1-1"/>
-<wire x1="56" y1="25.7" x2="57" y2="25.7" width="0" layer="19" extent="1-1"/>
-<wire x1="55.1" y1="25.7" x2="56" y2="25.7" width="0" layer="19" extent="1-1"/>
-<wire x1="54.1" y1="26" x2="55.1" y2="25.7" width="0" layer="19" extent="1-1"/>
-<wire x1="53.5" y1="26.6" x2="54.1" y2="26" width="0" layer="19" extent="1-1"/>
-<wire x1="52.8" y1="27.6" x2="53.5" y2="26.6" width="0" layer="19" extent="1-1"/>
-<wire x1="52.4" y1="28.9" x2="52.8" y2="27.6" width="0" layer="19" extent="1-1"/>
-<wire x1="50.67" y1="29.3" x2="52.4" y2="28.9" width="0" layer="19" extent="1-1"/>
-<wire x1="50.67" y1="28.2" x2="50.67" y2="29.3" width="0" layer="19" extent="1-1"/>
-<wire x1="50.67" y1="27.1" x2="50.67" y2="28.2" width="0" layer="19" extent="1-1"/>
-<wire x1="50.67" y1="31.5" x2="52.5" y2="31.3" width="0" layer="19" extent="1-1"/>
-<wire x1="50.67" y1="21.6" x2="50.67" y2="27.1" width="0" layer="19" extent="1-1"/>
-<wire x1="50.67" y1="19.4" x2="50.67" y2="21.6" width="0" layer="19" extent="1-1"/>
-<wire x1="48.95" y1="12.1" x2="50.67" y2="19.4" width="0" layer="19" extent="1-1"/>
-<wire x1="47.25" y1="9.1" x2="48.95" y2="12.1" width="0" layer="19" extent="1-1"/>
-<wire x1="43.1" y1="6.3" x2="47.25" y2="9.1" width="0" layer="19" extent="1-1"/>
-<wire x1="42.1" y1="5.3" x2="43.1" y2="6.3" width="0" layer="19" extent="1-1"/>
-<wire x1="27.4012" y1="12.0416625" x2="28.7" y2="10.9" width="0" layer="19" extent="1-16"/>
-<wire x1="26.25" y1="4.1" x2="25.84" y2="8.55" width="0" layer="19" extent="1-1"/>
-<wire x1="28.26529375" y1="25.15338125" x2="33.48816875" y2="19.417515625" width="0" layer="19" extent="1-1"/>
-<wire x1="22.55" y1="29.79" x2="25.54" y2="27.78" width="0" layer="19" extent="1-1"/>
-<wire x1="33.447" y1="29.43" x2="28.3" y2="28.2" width="0" layer="19" extent="1-16"/>
-<wire x1="35.41" y1="27.83" x2="33.447" y2="29.43" width="0" layer="19" extent="1-1"/>
-<wire x1="37.67" y1="28.2" x2="35.41" y2="27.83" width="0" layer="19" extent="1-1"/>
-<wire x1="37.67" y1="29.3" x2="37.67" y2="28.2" width="0" layer="19" extent="1-1"/>
-<wire x1="37.67" y1="30.4" x2="37.67" y2="29.3" width="0" layer="19" extent="1-1"/>
-<wire x1="37.67" y1="31.5" x2="37.67" y2="30.4" width="0" layer="19" extent="1-1"/>
-<wire x1="34.95" y1="32" x2="37.67" y2="31.5" width="0" layer="19" extent="1-1"/>
-<wire x1="35.82" y1="35.97" x2="34.95" y2="32" width="0" layer="19" extent="1-1"/>
-<wire x1="33.28" y1="35.97" x2="35.82" y2="35.97" width="0" layer="19" extent="1-1"/>
-<wire x1="18.95" y1="34.6" x2="22.55" y2="29.79" width="0" layer="19" extent="1-1"/>
-<wire x1="9.4" y1="3.235" x2="19.8" y2="6.45" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC">
 <contactref element="U1" pad="6"/>
@@ -2590,13 +2535,14 @@ Your Multi-CB Team
 </signal>
 <signal name="N$4">
 <contactref element="C5" pad="1"/>
+<contactref element="ANT1" pad="RF_FEED"/>
+<wire x1="67.12" y1="29.92" x2="67.4" y2="30.2" width="0.1524" layer="1"/>
+<wire x1="67.22" y1="30.02" x2="67.4" y2="30.2" width="0.1524" layer="1"/>
 <contactref element="C4" pad="1"/>
 <wire x1="66.72" y1="30.32" x2="67.12" y2="29.92" width="0.1524" layer="1"/>
 <wire x1="64.98" y1="28.5" x2="65" y2="28.52" width="0.508" layer="1"/>
 <wire x1="65" y1="28.52" x2="65" y2="30.32" width="0.508" layer="1"/>
 <wire x1="65" y1="30.32" x2="66.72" y2="30.32" width="0.508" layer="1"/>
-<contactref element="ANT1" pad="RF_FEED"/>
-<wire x1="67.12" y1="29.92" x2="67.4" y2="30.2" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SDA">
 <contactref element="J3" pad="2"/>
