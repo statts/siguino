@@ -50,7 +50,7 @@ void setup(){
   digitalWrite(LIGHT_PWR_PIN, LOW);  
   Serial.begin(9600);
 
-  pinMode(INT_PIN_SHOCK, INPUT);
+  pinMode(INT_PIN_SHOCK, INPUT_PULLUP);
   pinMode(INT_PIN_MAG, INPUT_PULLUP);
   pinMode(MAG_PWR_PIN, OUTPUT);
   set_power_mag(POWER_MODE::ON);
@@ -221,6 +221,18 @@ void print_sensor_data(unsigned int vals[]){
     
 }
 
+String uint64_to_hexstr(uint64_t int64bits) {
+  String hex_chars = "0123456789ABCDEF";
+  String hexstr = "";
+  int ndx;
+  for (int i=0; i<16; i++) {
+    ndx = int(int64bits & B1111);
+    int64bits = int64bits >> 4;
+    hexstr = hex_chars.substring(ndx, ndx+1) + hexstr;
+  }
+  return hexstr;
+}
+
 //main program loop
 void loop(){  
  
@@ -333,23 +345,25 @@ void loop(){
       print_sensor_data(vals);
     }
     
-    uint32_t packed = BitPacker::get_packed_message_32(vals, bits, 6);
-    String hex_bits = String(packed, HEX);
-    if (strlen(hex_bits.c_str())%2==1){
-      hex_bits = "0" + hex_bits;
-    }
+    uint64_t packed = BitPacker::get_packed_message_64(vals, bits, 9);
+    String hex_bits = uint64_to_hexstr(packed);
+    
+    //String hex_bits = String(packed, HEX);
+    //if (strlen(hex_bits.c_str())%2==1){
+    //  hex_bits = "0" + hex_bits;
+    //}
     String msg_header = "Packed bits (HEX): ";    
     Util::debug_print(msg_header + hex_bits);
 
     if (SEND_SIGFOX_MESSAGES){
       Util::debug_print(F("Sending temperature over SigFox::.."));
     
-      //digitalWrite(LED_PIN, HIGH);   // turn the LED on (HIGH is the voltage level)
+      digitalWrite(LED_PIN, HIGH);   // turn the LED on (HIGH is the voltage level)
       
       String chip_response = SigFox::send_at_command("AT$SF=" + hex_bits, 6000);
       Util::debug_print("Reponse from sigfox module: " + chip_response);
   
-      //digitalWrite(LED_PIN, LOW);    // turn the LED off by making the voltage LOW
+      digitalWrite(LED_PIN, LOW);    // turn the LED off by making the voltage LOW
       
     }else{
       Util::debug_print(F("Skipping Sigfox message sending..."));
