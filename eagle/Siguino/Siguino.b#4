@@ -168,7 +168,7 @@
 <wire x1="76" y1="0" x2="76" y2="38.5" width="0.1524" layer="20"/>
 <wire x1="76" y1="38.5" x2="0" y2="38.5" width="0.1524" layer="20"/>
 <wire x1="0" y1="38.5" x2="0" y2="0" width="0.1524" layer="20"/>
-<hole x="51.78" y="8.13" drill="3"/>
+<hole x="45.98" y="8.73" drill="3"/>
 <text x="37.6" y="0.1" size="0.5" layer="21">CTS</text>
 <text x="40.1" y="0.1" size="0.5" layer="21">GND</text>
 <text x="35" y="0.1" size="0.5" layer="21">V33</text>
@@ -197,7 +197,7 @@
 <text x="56.08" y="14.93" size="0.3048" layer="21" rot="R180">AH9246-W7</text>
 <text x="72.08" y="21.53" size="0.6096" layer="21" rot="R180">PROANT ONBOARD 868/915</text>
 <text x="35.8" y="38.7" size="0.6096" layer="21" rot="R180">MAG SENSE</text>
-<hole x="6" y="19.25" drill="3"/>
+<hole x="6" y="20.37" drill="3"/>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors">
@@ -2289,6 +2289,8 @@ Your Multi-CB Team
 <wire x1="26.4962" y1="8.0562" x2="26.3116625" y2="8.0562" width="0.1524" layer="1"/>
 <wire x1="26.3116625" y1="8.0562" x2="26.2554625" y2="8" width="0.1524" layer="1"/>
 <wire x1="26.2554625" y1="8" x2="25.5" y2="8" width="0.1524" layer="1"/>
+<wire x1="36.76816875" y1="18.6475125" x2="37.715684375" y2="17.7" width="0.1524" layer="1"/>
+<wire x1="37.715684375" y1="17.7" x2="37.8" y2="17.7" width="0.1524" layer="1"/>
 <via x="37.8" y="17.7" extent="1-16" drill="0.2"/>
 <wire x1="28.057" y1="13.95" x2="31.55" y2="13.95" width="0.1524" layer="1"/>
 <wire x1="31.55" y1="13.95" x2="31.6" y2="14" width="0.1524" layer="1"/>
@@ -2303,7 +2305,7 @@ Your Multi-CB Team
 <via x="37.9" y="15.1" extent="1-16" drill="0.2"/>
 <via x="34.7" y="13.5" extent="1-16" drill="0.2"/>
 <via x="47.8" y="21.6" extent="1-16" drill="0.2"/>
-<via x="46.1" y="8.4" extent="1-16" drill="0.2"/>
+<via x="51.8" y="8.3" extent="1-16" drill="0.2"/>
 <via x="55.5" y="8.2" extent="1-16" drill="0.2"/>
 <via x="21.6" y="3.3" extent="1-16" drill="0.2"/>
 <via x="9.6" y="4.1" extent="1-16" drill="0.2"/>
@@ -2364,8 +2366,6 @@ Your Multi-CB Team
 <via x="39.8" y="30.1" extent="1-16" drill="0.2"/>
 <wire x1="39.8" y1="30.1" x2="39.8" y2="28.8" width="0.1524" layer="16"/>
 <wire x1="39.8" y1="28.8" x2="39.7" y2="28.7" width="0.1524" layer="16"/>
-<wire x1="36.76816875" y1="18.647515625" x2="36.852484375" y2="18.647515625" width="0.1524" layer="1"/>
-<wire x1="36.852484375" y1="18.647515625" x2="37.8" y2="17.7" width="0.1524" layer="1"/>
 </signal>
 <signal name="VCC">
 <contactref element="U1" pad="6"/>
@@ -2697,7 +2697,7 @@ Your Multi-CB Team
 <wire x1="47.1488" y1="12.4266625" x2="47.1488" y2="13.7212" width="0.1524" layer="1"/>
 <wire x1="53.1812" y1="12.7466625" x2="52.0533375" y2="11.6188" width="0.1524" layer="1"/>
 <wire x1="52.0533375" y1="11.6188" x2="47.9566625" y2="11.6188" width="0.1524" layer="1"/>
-<wire x1="12.63" y1="22.67" x2="13.6" y2="21.7" width="0.1524" layer="16"/>
+<wire x1="13.13" y1="22.17" x2="13.6" y2="21.7" width="0.1524" layer="16"/>
 <via x="13.6" y="21.7" extent="1-16" drill="0.2"/>
 <via x="23.2" y="23.3" extent="1-16" drill="0.2"/>
 <wire x1="13.6" y1="21.7" x2="14.0738" y2="22.1738" width="0.1524" layer="1"/>
@@ -2708,22 +2708,19 @@ Your Multi-CB Team
 <wire x1="33.4" y1="24.3" x2="33.4" y2="25.3" width="0.1524" layer="16"/>
 <wire x1="33.4" y1="24.3" x2="32.4" y2="23.3" width="0.1524" layer="16"/>
 <via x="33.4" y="25.3" extent="1-16" drill="0.2"/>
-<wire x1="2.02" y1="21.85" x2="2.84" y2="22.67" width="0.1524" layer="16"/>
-<wire x1="2.84" y1="22.67" x2="12.63" y2="22.67" width="0.1524" layer="16"/>
+<wire x1="32.394571875" y1="26.305425" x2="32.394571875" y2="26.415225" width="0.1524" layer="1"/>
+<wire x1="2.02" y1="21.85" x2="2.34" y2="22.17" width="0.1524" layer="16"/>
+<wire x1="2.34" y1="22.17" x2="13.13" y2="22.17" width="0.1524" layer="16"/>
 <wire x1="32.394571875" y1="26.415225" x2="33.4" y2="25.409796875" width="0.1524" layer="1"/>
 <wire x1="33.4" y1="25.409796875" x2="33.4" y2="25.3" width="0.1524" layer="1"/>
 </signal>
 <signal name="D6">
 <contactref element="U1" pad="10"/>
 <contactref element="J2" pad="5"/>
-<wire x1="8.6" y1="17" x2="9.2" y2="17.6" width="0.1524" layer="1"/>
-<wire x1="9.2" y1="17.6" x2="17.9" y2="17.6" width="0.1524" layer="1"/>
-<wire x1="17.9" y1="17.6" x2="18.1" y2="17.8" width="0.1524" layer="1"/>
-<wire x1="2.02" y1="19.31" x2="4.33" y2="17" width="0.1524" layer="1"/>
-<wire x1="4.33" y1="17" x2="8.6" y2="17" width="0.1524" layer="1"/>
-<wire x1="27" y1="17.8" x2="28.978884375" y2="19.778884375" width="0.1524" layer="1"/>
-<wire x1="28.978884375" y1="19.778884375" x2="29.000459375" y2="19.778884375" width="0.1524" layer="1"/>
-<wire x1="18.1" y1="17.8" x2="27" y2="17.8" width="0.1524" layer="1"/>
+<wire x1="29.000459375" y1="19.778884375" x2="26.921575" y2="17.7" width="0.1524" layer="1"/>
+<wire x1="26.921575" y1="17.7" x2="8.26" y2="17.7" width="0.1524" layer="1"/>
+<wire x1="2.02" y1="19.31" x2="3.63" y2="17.7" width="0.1524" layer="1"/>
+<wire x1="3.63" y1="17.7" x2="8.26" y2="17.7" width="0.1524" layer="1"/>
 </signal>
 <signal name="D7">
 <contactref element="U1" pad="11"/>
@@ -3382,18 +3379,10 @@ Your Multi-CB Team
 <approved hash="5,1,0d59ab8ccb3b9111"/>
 <approved hash="5,1,9dcb4e88cdc8e6ee"/>
 <approved hash="5,1,92b64a50c920ed39"/>
+<approved hash="7,39,fac4d15cf8c439a3"/>
 <approved hash="7,39,c4c3d55c7bc3b0a4"/>
 <approved hash="7,39,6eeeb5d025a02466"/>
 <approved hash="7,39,54e9b1d0a2a7ad61"/>
-<approved hash="7,39,167416524e2a4e0c"/>
-<approved hash="7,39,161416f24e8a4e6c"/>
-<approved hash="4,1,811280d53a2f3be8"/>
-<approved hash="4,1,711370d6ea2cebe9"/>
-<approved hash="4,16,811280d53a2f3be8"/>
-<approved hash="4,16,711370d6ea2cebe9"/>
-<approved hash="2,20,711370d6ea2cebe9"/>
-<approved hash="2,20,811280d53a2f3be8"/>
-<approved hash="7,39,fac4d15cf8c439a3"/>
 </errors>
 </board>
 </drawing>
