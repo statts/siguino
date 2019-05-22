@@ -7183,11 +7183,6 @@ Sensor</text>
 <wire x1="274.32" y1="114.3" x2="274.32" y2="111.76" width="0.1524" layer="91"/>
 <label x="274.32" y="111.76" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="CTS"/>
-<wire x1="15.24" y1="119.38" x2="17.78" y2="119.38" width="0.1524" layer="91"/>
-<label x="17.78" y="119.38" size="1.27" layer="95" xref="yes"/>
-</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -7871,13 +7866,25 @@ Sensor</text>
 <wire x1="330.2" y1="48.26" x2="373.38" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="CTS" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="CTS"/>
+<wire x1="15.24" y1="119.38" x2="17.78" y2="119.38" width="0.1524" layer="91"/>
+<label x="17.78" y="119.38" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
 <net name="N$17" class="0">
 <segment>
 <pinref part="U6" gate="A" pin="!SHDN"/>
 <wire x1="393.7" y1="104.14" x2="403.86" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="403.86" y1="104.14" x2="403.86" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="U6" gate="A" pin="LX"/>
+<wire x1="393.7" y1="109.22" x2="396.24" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="L1" gate="G$1" pin="2"/>
-<wire x1="381" y1="121.92" x2="403.86" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="381" y1="121.92" x2="396.24" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="396.24" y1="121.92" x2="396.24" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="403.86" y1="121.92" x2="396.24" y2="121.92" width="0.1524" layer="91"/>
+<junction x="396.24" y="121.92"/>
 </segment>
 </net>
 <net name="VBAT2" class="0">
@@ -7911,11 +7918,6 @@ Sensor</text>
 <pinref part="J1" gate="G$1" pin="VCC"/>
 <wire x1="15.24" y1="116.84" x2="17.78" y2="116.84" width="0.1524" layer="91"/>
 <label x="17.78" y="116.84" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U6" gate="A" pin="LX"/>
-<wire x1="393.7" y1="109.22" x2="396.24" y2="109.22" width="0.1524" layer="91"/>
-<label x="396.24" y="109.22" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="3V3FTDI" class="0">
@@ -7957,8 +7959,9 @@ Sensor</text>
 <approved hash="104,1,373.38,20.32,U5,GND7,GND,,,"/>
 <approved hash="104,1,373.38,17.78,U5,GND18,GND,,,"/>
 <approved hash="104,1,373.38,15.24,U5,GND21,GND,,,"/>
-<approved hash="104,1,373.38,38.1,U5,VCCIO,3V3FTDI,,,"/>
+<approved hash="204,1,373.38,38.1,U5,VCCIO,,,,"/>
 <approved hash="104,1,373.38,22.86,U5,AGND,GND,,,"/>
+<approved hash="202,1,373.38,25.4,U5,TEST,,,,"/>
 <approved hash="104,1,373.38,43.18,U5,VCC,5V,,,"/>
 <approved hash="202,1,403.86,20.32,U5,PWREN,,,,"/>
 <approved hash="202,1,403.86,17.78,U5,TXDEN,,,,"/>
@@ -7979,25 +7982,25 @@ Sensor</text>
 <approved hash="208,1,157.48,121.92,VCC,sup,,,,"/>
 <approved hash="208,1,180.34,175.26,VCC,sup,,,,"/>
 <approved hash="208,1,393.7,106.68,VCC,out,,,,"/>
-<approved hash="108,1,0,99.06,N$8,,,,,"/>
-<approved hash="108,1,20.32,198.12,N$8,,,,,"/>
-<approved hash="108,1,0,55.88,N$8,,,,,"/>
-<approved hash="108,1,48.26,198.12,N$8,,,,,"/>
-<approved hash="108,1,190.5,198.12,N$8,,,,,"/>
-<approved hash="108,1,78.74,198.12,N$8,,,,,"/>
-<approved hash="108,1,27.94,81.28,N$8,,,,,"/>
-<approved hash="108,1,190.5,134.62,N$8,,,,,"/>
-<approved hash="108,1,121.92,198.12,N$8,,,,,"/>
-<approved hash="108,1,66.04,134.62,N$8,,,,,"/>
-<approved hash="108,1,78.74,134.62,N$8,,,,,"/>
-<approved hash="108,1,0,134.62,N$8,,,,,"/>
-<approved hash="108,1,48.26,134.62,N$8,,,,,"/>
-<approved hash="108,1,121.92,81.28,N$8,,,,,"/>
 <approved hash="108,1,190.5,81.28,N$8,,,,,"/>
+<approved hash="108,1,121.92,198.12,N$8,,,,,"/>
+<approved hash="108,1,78.74,198.12,N$8,,,,,"/>
+<approved hash="108,1,0,134.62,N$8,,,,,"/>
+<approved hash="108,1,27.94,81.28,N$8,,,,,"/>
+<approved hash="108,1,121.92,81.28,N$8,,,,,"/>
+<approved hash="108,1,78.74,134.62,N$8,,,,,"/>
+<approved hash="108,1,20.32,198.12,N$8,,,,,"/>
+<approved hash="108,1,0,99.06,N$8,,,,,"/>
+<approved hash="108,1,48.26,198.12,N$8,,,,,"/>
+<approved hash="108,1,66.04,134.62,N$8,,,,,"/>
+<approved hash="108,1,48.26,134.62,N$8,,,,,"/>
 <approved hash="108,1,27.94,0,N$8,,,,,"/>
+<approved hash="108,1,121.92,134.62,N$8,,,,,"/>
+<approved hash="108,1,190.5,198.12,N$8,,,,,"/>
 <approved hash="108,1,20.32,134.62,N$8,,,,,"/>
 <approved hash="108,1,27.94,134.62,N$8,,,,,"/>
-<approved hash="108,1,121.92,134.62,N$8,,,,,"/>
+<approved hash="108,1,0,55.88,N$8,,,,,"/>
+<approved hash="108,1,190.5,134.62,N$8,,,,,"/>
 <approved hash="113,1,12.0227,76.2677,J2,,,,,"/>
 <approved hash="113,1,228.6,98.8162,SFM1,,,,,"/>
 <approved hash="113,1,12.0227,44.5177,J3,,,,,"/>
