@@ -3297,11 +3297,9 @@ Your Multi-CB Team
 </signal>
 <signal name="N$17">
 <contactref element="U6" pad="3"/>
-<contactref element="U6" pad="5"/>
 <contactref element="L1" pad="2"/>
 <wire x1="31.9176" y1="35.65" x2="33.3" y2="35.65" width="0.1524" layer="1"/>
 <wire x1="33.3" y1="35.65" x2="33.6" y2="35.35" width="0.1524" layer="1"/>
-<wire x1="29.6824" y1="33.75" x2="31.5824" y2="35.65" width="0.1524" layer="1"/>
 <wire x1="31.5824" y1="35.65" x2="31.9176" y2="35.65" width="0.1524" layer="1"/>
 </signal>
 <signal name="VBAT2">
@@ -3348,6 +3346,8 @@ Your Multi-CB Team
 <wire x1="30.8542625" y1="32.03" x2="30.4148625" y2="32.4694" width="0.1524" layer="1"/>
 <wire x1="30.4148625" y1="32.4694" x2="29.7494625" y2="32.4694" width="0.1524" layer="1"/>
 <wire x1="29.7494625" y1="32.4694" x2="29.7321625" y2="32.4521" width="0.1524" layer="1"/>
+<contactref element="U6" pad="5"/>
+<wire x1="28.7716" y1="33.4126625" x2="29.6824" y2="33.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="3V3FTDI">
 <contactref element="U5" pad="17"/>

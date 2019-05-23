@@ -163,7 +163,7 @@
 </layers>
 <board>
 <plain>
-<text x="44.38" y="35.13" size="1.27" layer="21">Siguino, Rev: 2.2</text>
+<text x="44.38" y="35.13" size="1.27" layer="21">Siguino, Rev: 2.3</text>
 <wire x1="0" y1="0" x2="75.5" y2="0" width="0.1524" layer="20"/>
 <wire x1="75.5" y1="0" x2="75.5" y2="38" width="0.1524" layer="20"/>
 <wire x1="75.5" y1="38" x2="0" y2="38" width="0.1524" layer="20"/>

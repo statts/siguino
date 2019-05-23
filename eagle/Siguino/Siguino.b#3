@@ -1325,6 +1325,23 @@ L×W : 2.9mm×1.5mm&lt;p&gt;
 <text x="-6.35" y="12.7" size="0.6096" layer="25">&gt;NAME</text>
 <text x="6.35" y="13.97" size="0.6096" layer="27" rot="R180">&gt;VALUE</text>
 </package>
+<package name="0603" urn="urn:adsk.eagle:footprint:37386/1">
+<description>&lt;p&gt;&lt;b&gt;Generic 1608 (0603) package&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
+<wire x1="-1.6" y1="0.7" x2="1.6" y2="0.7" width="0.0508" layer="39"/>
+<wire x1="1.6" y1="0.7" x2="1.6" y2="-0.7" width="0.0508" layer="39"/>
+<wire x1="1.6" y1="-0.7" x2="-1.6" y2="-0.7" width="0.0508" layer="39"/>
+<wire x1="-1.6" y1="-0.7" x2="-1.6" y2="0.7" width="0.0508" layer="39"/>
+<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
+<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+</package>
 </packages>
 </library>
 <library name="SparkFun-IC-Comms" urn="urn:adsk.eagle:library:521">
@@ -2135,6 +2152,10 @@ Your Multi-CB Team
 <attribute name="PROD_ID" value="CONN-09193" x="52.03" y="30.43" size="1.778" layer="27" display="off"/>
 <attribute name="SF_ID" value="WRL-09144" x="52.03" y="30.43" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="50.76" y="27.89" size="0.6096" layer="27" font="vector" ratio="20" align="top-left"/>
+</element>
+<element name="U$1" library="Siguino" package="0603" value="PPTCFUSEGENERIC0603" x="1.8" y="-3.3" smashed="yes">
+<attribute name="NAME" x="1.8" y="-2.538" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="VALUE" x="1.8" y="-4.062" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
 </elements>
 <signals>
@@ -3141,15 +3162,6 @@ Your Multi-CB Team
 <wire x1="69.1" y1="29.03" x2="69.08" y2="29.05" width="0.508" layer="1" curve="-90"/>
 <wire x1="69.08" y1="29.05" x2="69.08" y2="30.85" width="0.508" layer="1"/>
 </signal>
-<signal name="VBAT">
-<contactref element="BATT1" pad="VBATT"/>
-<contactref element="Q1" pad="3"/>
-<wire x1="25.97" y1="34.68" x2="25.7" y2="34.41" width="0.1524" layer="1"/>
-<wire x1="25.7" y1="34.41" x2="25.7" y2="33.7" width="0.1524" layer="1"/>
-<via x="25.7" y="33.7" extent="1-16" drill="0.2"/>
-<wire x1="25.7" y1="33.7" x2="18.175" y2="33.7" width="0.1524" layer="16"/>
-<wire x1="18.175" y1="33.7" x2="16.58" y2="35.295" width="0.1524" layer="16"/>
-</signal>
 <signal name="N$9">
 <contactref element="C8" pad="2"/>
 <contactref element="U2" pad="4"/>
@@ -3391,6 +3403,16 @@ Your Multi-CB Team
 <wire x1="33.7" y1="4.619" x2="33.625" y2="4.544" width="0.1524" layer="1"/>
 <wire x1="38.5" y1="7.2" x2="37.4" y2="7.2" width="0.1524" layer="1"/>
 <wire x1="37.4" y1="7.2" x2="36.4" y2="6.2" width="0.1524" layer="1"/>
+</signal>
+<signal name="VBAT">
+<contactref element="BATT1" pad="VBATT"/>
+<contactref element="U$1" pad="1"/>
+<wire x1="0.95" y1="-3.3" x2="16.58" y2="35.295" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="VSAFE">
+<contactref element="U$1" pad="2"/>
+<contactref element="Q1" pad="3"/>
+<wire x1="2.65" y1="-3.3" x2="25.97" y2="34.68" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
