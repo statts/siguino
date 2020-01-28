@@ -6665,7 +6665,7 @@ http://www.proant.se/files/user/Datasheet%20-%20OnBoard%20SMD%20868-915%20MHz%20
 <part name="C18" library="SparkFun-Capacitors" deviceset="10UF" device="-0603-6.3V-20%" value="10uF"/>
 <part name="Q2" library="SparkFun-DiscreteSemi" deviceset="MOSFET_PCH" device="SI2323DDS" value="MOSFET P-CH 20V 5.3A SOT-23"/>
 <part name="J5" library="SparkFun-Connectors" deviceset="U.FL2PIN" device="" value="U.FL"/>
-<part name="U$1" library="Siguino" deviceset="PPTCFUSEGENERIC0603" device=""/>
+<part name="U$1" library="Siguino" deviceset="PPTCFUSEGENERIC0603" device="" value="PPTC"/>
 </parts>
 <sheets>
 <sheet>

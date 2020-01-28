@@ -1,0 +1,132 @@
+# Created by Ultra Librarian Gold 8.3.134 Copyright © 1999-2018
+# Frank Frank, Accelerated Designs
+
+Grid mil;
+Set Wire_Bend 2;
+
+
+Edit 'SD0603.pac';
+Layer 1;
+Smd '1' 28 32 -0 R0 (-31.5 0);
+Layer 1;
+Smd '2' 28 32 -0 R0 (31.5 0);
+Layer 1;
+Layer 39;
+Wire 6 (-56 -26) (-56 26);
+Wire 6 (-56 26) (-44 26);
+Wire 6 (44 26) (56 26);
+Wire 6 (56 26) (56 -26);
+Wire 6 (56 -26) (44 -26);
+Wire 6 (-44 -26) (-56 -26);
+Wire 6 (-44 -30) (-44 -26);
+Wire 6 (-44 26) (-44 30);
+Wire 6 (-44 30) (44 30);
+Wire 6 (44 30) (44 26);
+Wire 6 (44 -26) (44 -30);
+Wire 6 (44 -30) (-44 -30);
+Layer 39;
+Change Spacing 50;
+Change Pour solid;
+Polygon 6  (-55.5 -26) (-55.5 26) (-43.5 26) (-43.5 29.5) (43.5 29.5) (43.5 26) \
+    (55.5 26) (55.5 -26) (43.5 -26) (43.5 -29.5) (-43.5 -29.5) (-43.5 -26) (-55.5 -26);
+Layer 21;
+Wire 6 (-86 0) (-136 0);
+Wire 6 (-126 25) (-126 -25);
+Wire 6 (-126 0) (-96 25);
+Wire 6 (-126 0) (-96 20);
+Wire 6 (-126 0) (-96 15);
+Wire 6 (-126 0) (-96 10);
+Wire 6 (-126 0) (-96 5);
+Wire 6 (-126 0) (-96 -25);
+Wire 6 (-126 0) (-96 -20);
+Wire 6 (-126 0) (-96 -15);
+Wire 6 (-126 0) (-96 -10);
+Wire 6 (-126 0) (-96 -5);
+Wire 6 (-96 25) (-96 -25);
+Wire 6 (-8 -24) (8 -24);
+Wire 6 (8 24) (-8 24);
+Layer 51;
+Wire 6 (-86 0) (-136 0);
+Wire 6 (-126 25) (-126 -25);
+Wire 6 (-126 0) (-96 25);
+Wire 6 (-126 0) (-96 20);
+Wire 6 (-126 0) (-96 15);
+Wire 6 (-126 0) (-96 10);
+Wire 6 (-126 0) (-96 5);
+Wire 6 (-126 0) (-96 -25);
+Wire 6 (-126 0) (-96 -20);
+Wire 6 (-126 0) (-96 -15);
+Wire 6 (-126 0) (-96 -10);
+Wire 6 (-126 0) (-96 -5);
+Wire 6 (-96 25) (-96 -25);
+Wire 6 (-34 -20) (34 -20);
+Wire 6 (34 -20) (34 20);
+Wire 6 (34 20) (-34 20);
+Wire 6 (-34 20) (-34 -20);
+Layer 23;
+Wire 6 (-10 0) (10 0);
+Wire 6 (0 -10) (0 10);
+Layer 41;
+Layer 41;
+Change Spacing 50;
+Change Pour solid;
+Polygon 6  (-15.5 17.5) (15.5 17.5) (15.5 -17.5) (-15.5 -17.5) (-15.5 17.5);
+Layer 25;
+Change Size 50;
+Change Ratio 6;
+Text '>Name' SR0 (-129 -25);
+Layer 27;
+
+Edit 'DIODE.sym';
+Layer 94;
+Pin '2' Pas None Short R0 Off 1 (0 0)
+Pin '1' Pas None Short R180 Off 1 (400 0)
+Wire 8 (100 0) (137 0);
+Wire 8 (150 75) (150 -75);
+Wire 8 (125 0) (150 0);
+Wire 8 (250 -75) (250 75);
+Wire 8 (250 0) (300 0);
+Wire 8 (250 0) (150 75);
+Wire 8 (150 -75) (250 0);
+Layer 97;
+Layer 96;
+Change Size 137;
+Change Ratio 10;
+Text '>Value' SR0 (-153 -218);
+Layer 95;
+Change Size 137;
+Change Ratio 10;
+Text '>Name' SR0 (-111 106);
+
+Edit 'DIODEV.sym';
+Layer 94;
+Pin '2' Pas None Short R90 Off 1 (0 0)
+Pin '1' Pas None Short R270 Off 1 (0 400)
+Wire 8 (0 100) (0 137);
+Wire 8 (-75 150) (75 150);
+Wire 8 (0 125) (0 150);
+Wire 8 (75 250) (-75 250);
+Wire 8 (0 250) (0 300);
+Wire 8 (0 250) (-75 150);
+Wire 8 (75 150) (0 250);
+Layer 97;
+Layer 96;
+Change Size 137;
+Change Ratio 10;
+Text '>Value' SR0 (100 82);
+Layer 95;
+Change Size 137;
+Change Ratio 10;
+Text '>Name' SR0 (100 206);
+
+Edit 'SD0603S040S0R2.dev';
+Prefix 'CR';
+Description '';
+Value Off;
+Add DIODE 'A' Next  1 (0 0);
+Package 'SD0603';
+Technology '';
+Attribute Manufacturer_Part_Number 'SD0603S040S0R2';
+Attribute Vendor 'AVX Corporation';
+Connect 'A.2' '2';
+Connect 'A.1' '1';

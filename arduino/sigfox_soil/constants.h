@@ -8,7 +8,7 @@ const int LIGHT_SENSOR_PIN = A0;
 const int LED_PIN = 7; //no on-board LED for low pow reasons
 const int TX_PIN = 9;
 const int SIGFOX_WAIT_PERIODS = 480; //8 periods of 8 seconds approx 1 min, 120 ~ 15 mins
-const int SENSOR_READ_PERIOD = 2;// read sensors roughly every x periods, x = 8 ~ 1 minute (64 seconds)
+const int SENSOR_READ_PERIOD = 8;// read sensors roughly every x periods, x = 8 ~ 1 minute (64 seconds)
 const byte INT_PIN_SHOCK = 3;
 const byte INT_PIN_MAG = 2;
 const int MIN_BATT_LVL = 20;

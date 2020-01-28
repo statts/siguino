@@ -10,12 +10,16 @@
 #include "magnet.h"
 
 #define SEALEVELPRESSURE_HPA (1013.25)
+#define D6POWER 6
+#define A1POWER 15
+
 
 Adafruit_BME280 bme; // I2C
 //Adafruit_BMP280 bmp(BMP_CS); // hardware SPI
 //Adafruit_BMP280 bmp(BMP_CS, BMP_MOSI, BMP_MISO,  BMP_SCK);
 
 const byte BME_ADDRESS   =  0x76;
+const int READ_COUNT = 10;
 
 //set to false for debug and to avoid sending messages but still take sensor readings
 bool SEND_SIGFOX_MESSAGES = true;
@@ -37,7 +41,7 @@ bool mag_opened = false;
 unsigned int seq_num = 0;
 enum POWER_MODE {OFF = 0, ON = 1};
 int init_vcc = 0;
-  int total_light = 0;
+  int total_moisture = 0;
   float total_temp = 0;
   float total_pressure = 0;
   float total_humidity = 0;
@@ -185,18 +189,51 @@ float get_temperature_reading(){
   return temperature;
 }
 
+/*
 int get_light_reading(){
   digitalWrite(LIGHT_PWR_PIN, HIGH);
   int light_value =  analogRead(LIGHT_SENSOR_PIN);
   digitalWrite(LIGHT_PWR_PIN, LOW);
   return light_value;
+}*/
+
+int get_moisture_reading(){
+  float read_avg = 0;
+  int moisture_level = 0;
+  for (int i=0;i<READ_COUNT;i++){
+    if ((i%2)==0) {
+      digitalWrite(A1POWER, HIGH);          // turn ON sensor voltage
+      delay(10); 
+      moisture_level = analogRead(A7);
+      read_avg += moisture_level;
+      Serial.print("A7 = ");      
+      Serial.println(moisture_level);
+      //Serial.print("A6 = ");
+      //Serial.println(analogRead(A6));  
+      digitalWrite(A1POWER, LOW);          // "
+      
+    } else {
+      digitalWrite(D6POWER, HIGH);          // "  
+      delay(10); 
+      moisture_level = analogRead(A6);
+      read_avg += moisture_level;
+      Serial.print("A6 = ");
+      Serial.println(moisture_level);  
+      //Serial.print("A7 = ");
+      //Serial.println(analogRead(A7));  
+      digitalWrite(D6POWER, LOW);          // turn off sensor voltage      
+    }
+  }
+  read_avg /= READ_COUNT;
+  return int(read_avg);
 }
 
-// unsigned int vals[] = {seq_num, rounded_temp, avg_light, shock_occurred, mag_occurred, batt_lvl,rounded_pressure,rounded_hum,rounded_alt};
+
+// unsigned int vals[] = {seq_num, rounded_temp, avg_moisture, shock_occurred, mag_occurred, batt_lvl,rounded_pressure,rounded_hum,rounded_alt};
 void print_sensor_data(unsigned int vals[]){
     Serial.print(F("Seq num: "));
     Serial.println(vals[0]);
-    Serial.println(F("---Seq--|M|S|--Light--|--Temp-|Batt|Pressure|Humidity|Altitude"));
+    Serial.println(F("---Seq--|M|S|--SoilM--|--Temp-|Batt|Pressure|Humidity|Altitude"));
     String hex_bits = String(vals[0], BIN);
     int len = strlen(hex_bits.c_str());
     for (int i=0;i<8 - len;i++){
@@ -255,9 +292,13 @@ void loop(){
     total_temp += f;
 
     // get light level
-    int light_reading = get_light_reading();
+    /*int light_reading = get_light_reading();
     Util::debug_print("Light: ", light_reading, true);
-    total_light += light_reading;
+    total_light += light_reading;*/
+    int moisture_reading = get_moisture_reading();
+    Util::debug_print("Moisture: ", moisture_reading, true);
+    total_moisture += moisture_reading;
+    
 
     //get pressure
     f = bme.readPressure() / 100.0F;
@@ -285,10 +326,8 @@ void loop(){
     SigFox::set_sigfox_sleep(false);  
 
     vals[0] = seq_num;
-    //float avg_temp = total_temp / num_readings;
-    ui = total_light / num_readings;
-    Util::debug_print("Avg light level: ", ui, true);
-  //  String light_bin = String(ui, BIN);
+    ui = total_moisture / num_readings;
+    Util::debug_print("Avg moisture level: ", ui, true);
     vals[2] = ui;
        
     ui = Util::round_float((total_temp / num_readings) *2);
@@ -327,7 +366,7 @@ void loop(){
     
     //String batt_lvl_bin = String(ui, BIN);
     
-    //unsigned int vals[] = {seq_num, rounded_temp, avg_light, check_shock_occurred(), check_mag_occurred(), batt_lvl,rounded_pressure,rounded_hum,rounded_alt};
+    //unsigned int vals[] = {seq_num, rounded_temp, avg_moisture, check_shock_occurred(), check_mag_occurred(), batt_lvl,rounded_pressure,rounded_hum,rounded_alt};
     unsigned int bits[] = {8,7,10,1,1,4,8,7,9};
 
     if (DEBUG_MODE){
@@ -359,7 +398,7 @@ void loop(){
     Util::debug_print(F("Set sigfox sleep mode..."));
     SigFox::set_sigfox_sleep(true);
     total_temp = 0;
-    total_light = 0;
+    total_moisture = 0;
     total_pressure = 0;
     total_humidity = 0;
     total_altitude = 0;
